@@ -1,200 +1,200 @@
-# The Power of BMad Expansion Packs
+# BMad拡張パックの力
 
-## Overview
+## 概要
 
-BMad Method's expansion packs unlock the framework's true potential by extending its natural language AI orchestration to ANY domain. While the core framework focuses on software development, expansion packs transform BMad into a universal AI agent system.
+BMad Methodの拡張パックは、自然言語AI統制を任意のドメインに拡張することで、フレームワークの真のポテンシャルを解き放ちます。コアフレームワークはソフトウェア開発に焦点を当てていますが、拡張パックはBMadを汎用AIエージェントシステムに変換します。
 
-## Why Expansion Packs?
+## なぜ拡張パックなのか？
 
-### Keep Core Lean
+### コアをリーンに保つ
 
-The core BMad framework maintains its focus on software development, ensuring dev agents have maximum context for coding. Expansion packs handle everything else.
+コアBMadフレームワークは、開発エージェントがコーディングのための最大のコンテキストを持てるよう、ソフトウェア開発に焦点を維持しています。拡張パックはそれ以外のすべてを処理します。
 
-### Domain Expertise
+### ドメイン専門知識
 
-Each expansion pack provides deep, specialized knowledge without bloating the core system. Install only what you need.
+各拡張パックは、コアシステムを肥大化させることなく、深く専門的な知識を提供します。必要なもののみをインストールします。
 
-### Community Innovation
+### コミュニティイノベーション
 
-Anyone can create and share expansion packs, fostering a ecosystem of AI-powered solutions across all industries and interests.
+誰でも拡張パックを作成・共有でき、全業界・関心分野にわたるAI駆動ソリューションのエコシステムを育成します。
 
-## Technical Expansion Packs (Examples of possible expansions to come)
+## 技術的拡張パック（将来予定される拡張の例）
 
-### Game Development Pack
+### ゲーム開発パック
 
-Transform your AI into a complete game development studio:
+あなたのAIを完全なゲーム開発スタジオに変換します：
 
-- **Game Designer**: Mechanics, balance, progression systems
-- **Level Designer**: Map layouts, puzzle design, difficulty curves
-- **Narrative Designer**: Story arcs, dialog trees, lore creation
-- **Art Director**: Visual style guides, asset specifications
-- **Sound Designer**: Audio direction, music themes, SFX planning
+- **ゲームデザイナー**: メカニクス、バランス、進行システム
+- **レベルデザイナー**: マップレイアウト、パズル設計、難易度曲線
+- **ナラティブデザイナー**: ストーリーアーク、対話ツリー、世界観創造
+- **アートディレクター**: ビジュアルスタイルガイド、アセット仕様
+- **サウンドデザイナー**: オーディオディレクション、音楽テーマ、SFX計画
 
-### Mobile Development Pack
+### モバイル開発パック
 
-Specialized agents for mobile app creation:
+モバイルアプリ開発に特化したエージェント：
 
-- **iOS Specialist**: Swift/SwiftUI patterns, Apple guidelines
-- **Android Expert**: Kotlin best practices, Material Design
-- **Mobile UX Designer**: Touch interfaces, gesture patterns
-- **App Store Optimizer**: ASO strategies, listing optimization
-- **Performance Tuner**: Battery optimization, network efficiency
+- **iOSスペシャリスト**: Swift/SwiftUIパターン、Appleガイドライン
+- **Androidエキスパート**: Kotlinベストプラクティス、Material Design
+- **モバイルUXデザイナー**: タッチインターフェース、ジェスチャーパターン
+- **アプリストア最適化**: ASOストラテジー、リスト最適化
+- **パフォーマンスチューナー**: バッテリー最適化、ネットワーク効率
 
-### DevOps/Infrastructure Pack
+### DevOps/インフラ拡張パック
 
-Complete infrastructure automation team:
+完全なインフラ自動化チーム：
 
-- **Cloud Architect**: AWS/Azure/GCP design patterns
-- **Security Specialist**: Zero-trust implementation, compliance
-- **SRE Expert**: Monitoring, alerting, incident response
-- **Container Orchestrator**: Kubernetes, Docker optimization
-- **Cost Optimizer**: Cloud spend analysis, resource right-sizing
+- **クラウドアーキテクト**: AWS/Azure/GCP設計パターン
+- **セキュリティスペシャリスト**: ゼロトラスト実装、コンプライアンス
+- **SREエキスパート**: 監視、アラート、インシデント対応
+- **コンテナオーケストレーター**: Kubernetes、Docker最適化
+- **コスト最適化**: クラウド支出分析、リソース適正サイジング
 
-### Data Science Pack
+### データサイエンスパック
 
-AI-powered data analysis team:
+AI駆動データ分析チーム：
 
-- **Data Scientist**: Statistical analysis, ML model selection
-- **Data Engineer**: Pipeline design, ETL processes
-- **ML Engineer**: Model deployment, A/B testing
-- **Visualization Expert**: Dashboard design, insight communication
-- **Ethics Advisor**: Bias detection, fairness assessment
+- **データサイエンティスト**: 統計分析、MLモデル選択
+- **データエンジニア**: パイプライン設計、ETLプロセス
+- **MLエンジニア**: モデルデプロイ、A/Bテスト
+- **可視化エキスパート**: ダッシュボード設計、インサイトコミュニケーション
+- **倫理アドバイザー**: バイアス検出、公平性評価
 
-## Non-Technical Expansion Packs
+## 非技術系拡張パック
 
-### Business Strategy Pack
+### ビジネスストラテジーパック
 
-Complete business advisory team:
+完全なビジネスアドバイザリーチーム：
 
-- **Strategy Consultant**: Market positioning, competitive analysis
-- **Financial Analyst**: Projections, unit economics, funding strategies
-- **Operations Manager**: Process optimization, efficiency improvements
-- **Marketing Strategist**: Go-to-market plans, growth hacking
-- **HR Advisor**: Talent strategies, culture building
+- **戦略コンサルタント**: 市場ポジショニング、競合分析
+- **ファイナンシャルアナリスト**: 予測、単位経済性、資金調達戦略
+- **オペレーションズマネージャー**: プロセス最適化、効率改善
+- **マーケティングストラテジスト**: Go-to-market計画、グロースハッキング
+- **HRアドバイザー**: 人材戦略、文化構築
 
-### Creative Writing Pack
+### クリエイティブライティングパック
 
-Your personal writing team:
+あなたのパーソナルライティングチーム：
 
-- **Plot Architect**: Three-act structure, story beats, pacing
-- **Character Psychologist**: Deep motivations, authentic dialog
-- **World Builder**: Consistent universes, cultural systems
-- **Editor**: Style consistency, grammar, flow
-- **Beta Reader**: Feedback simulation, plot hole detection
+- **プロットアーキテクト**: 3幕構成、ストーリービート、ペーシング
+- **キャラクター心理学者**: 深い動機、本物の対話
+- **世界構築家**: 一貫した世界観、文化システム
+- **エディター**: スタイル一貫性、文法、流れ
+- **ベータリーダー**: フィードバックシミュレーション、プロットホール検出
 
-### Health & Wellness Pack
+### ヘルス&ウェルネスパック
 
-Personal wellness coaching system:
+パーソナルウェルネスコーチングシステム：
 
-- **Fitness Trainer**: Progressive overload, form correction
-- **Nutritionist**: Macro planning, supplement guidance
-- **Sleep Coach**: Circadian optimization, sleep hygiene
-- **Stress Manager**: Coping strategies, work-life balance
-- **Habit Engineer**: Behavior change, accountability systems
+- **フィットネストレーナー**: 漸進的過負荷、フォーム修正
+- **管理栄養士**: マクロ計画、サプリメントガイダンス
+- **睡眠コーチ**: 概日リズム最適化、睡眠衛生
+- **ストレスマネージャー**: 対処戦略、ワークライフバランス
+- **習慣エンジニア**: 行動変容、説明責任システム
 
-### Education Pack
+### 教育パック
 
-Complete learning design system:
+完全な学習設計システム：
 
-- **Curriculum Architect**: Learning objectives, scope & sequence
-- **Instructional Designer**: Engagement strategies, multimedia learning
-- **Assessment Specialist**: Rubrics, formative/summative evaluation
-- **Differentiation Expert**: Adaptive learning, special needs
-- **EdTech Integrator**: Tool selection, digital pedagogy
+- **カリキュラムアーキテクト**: 学習目標、スコープ&シーケンス
+- **インストラクショナルデザイナー**: エンゲージメント戦略、マルチメディア学習
+- **評価スペシャリスト**: ルーブリック、形成的/総括的評価
+- **個別指導エキスパート**: 適応学習、特別ニーズ
+- **教育技術統合スペシャリスト**: ツール選択、デジタル教育学
 
-### Mental Health Support Pack
+### メンタルヘルスサポートパック
 
-Therapeutic support system:
+セラピーサポートシステム：
 
-- **CBT Guide**: Cognitive restructuring, thought challenging
-- **Mindfulness Teacher**: Meditation scripts, awareness exercises
-- **Journal Therapist**: Reflective prompts, emotional processing
-- **Crisis Support**: Coping strategies, safety planning
-- **Habit Tracker**: Mood monitoring, trigger identification
+- **CBTガイド**: 認知再構成、思考チャレンジ
+- **マインドフルネスティーチャー**: 瞑想スクリプト、気づきエクササイズ
+- **ジャーナルセラピスト**: 内省プロンプト、感情処理
+- **危機サポート**: 対処戦略、安全計画
+- **習慣トラッカー**: 気分監視、トリガー識別
 
-### Legal Assistant Pack
+### リーガルアシスタントパック
 
-Legal document and research support:
+法的文書・調査サポート：
 
-- **Contract Analyst**: Term review, risk assessment
-- **Legal Researcher**: Case law, precedent analysis
-- **Document Drafter**: Template customization, clause libraries
-- **Compliance Checker**: Regulatory alignment, audit prep
-- **IP Advisor**: Patent strategies, trademark guidance
+- **契約アナリスト**: 条件レビュー、リスク評価
+- **法学研究者**: 判例法、判例分析
+- **文書作成家**: テンプレートカスタマイズ、条項ライブラリ
+- **コンプライアンスチェッカー**: 規制適合、監査準備
+- **知的財産アドバイザー**: 特許戦略、商標ガイダンス
 
-### Real Estate Pack
+### 不動産パック
 
-Property investment and management:
+不動産投資・管理：
 
-- **Market Analyst**: Comparable analysis, trend prediction
-- **Investment Calculator**: ROI modeling, cash flow analysis
-- **Property Manager**: Tenant screening, maintenance scheduling
-- **Flip Strategist**: Renovation ROI, project planning
-- **Agent Assistant**: Listing optimization, showing prep
+- **市場アナリスト**: 比較分析、トレンド予測
+- **投資計算機**: ROIモデリング、キャッシュフロー分析
+- **プロパティマネージャー**: 入居者审査、メンテナンススケジュール
+- **フリップ戦略家**: リフォームROI、プロジェクト計画
+- **エージェントアシスタント**: リスティング最適化、内見準備
 
-### Personal Development Pack
+### パーソナル開発パック
 
-Complete personal growth system:
+完全な個人成長システム：
 
-- **Life Coach**: Guides personal growth and transformation
-- **Goal Strategist**: Helps achieve objectives with SMART goals
-- **Habit Builder**: Creates lasting habits with accountability
-- **Mindset Mentor**: Develops positive thinking patterns
+- **ライフコーチ**: 個人的成長と変革をガイド
+- **目標ストラテジスト**: SMART目標で目標達成を支援
+- **習慣ビルダー**: 説明責任と共に永続的な習慣を構築
+- **マインドセットメンター**: ポジティブ思考パターンを開発
 
-Key tasks include:
+主要なタスクには以下が含まれます：
 
-- `goal-setting`: Defines SMART goals with action plans
-- `habit-tracking`: Monitors habit formation progress
-- `reflection-exercise`: Facilitates deep self-reflection
+- `goal-setting`: アクションプラン付きSMART目標を定義
+- `habit-tracking`: 習慣形成の進捗を監視
+- `reflection-exercise`: 深い自己省察を促進
 
-## Unique & Innovative Packs
+## ユニーク&革新的パック
 
-### Role-Playing Game Master Pack
+### RPGゲームマスターパック
 
-AI-powered tabletop RPG assistance:
+AI駆動テーブルトップRPG支援：
 
-- **World Master**: Dynamic world generation, NPC creation
-- **Combat Referee**: Initiative tracking, rule clarification
-- **Story Weaver**: Plot hooks, side quests, consequences
-- **Character Builder**: Backstory generation, stat optimization
-- **Loot Master**: Treasure generation, magic item creation
+- **ワールドマスター**: 動的世界生成、NPC作成
+- **コンバットレフェリー**: イニシアティブ追跡、ルール明確化
+- **ストーリーウィーバー**: プロットフック、サイドクエスト、結果
+- **キャラクタービルダー**: 背景ストーリー生成、ステータス最適化
+- **戦利品マスター**: 宝物生成、魔法アイテム作成
 
-### Life Event Planning Pack
+### ライフイベント計画パック
 
-Major life event coordination:
+人生の大きなイベントの調整：
 
-- **Wedding Planner**: Vendor coordination, timeline creation
-- **Event Designer**: Theme development, decoration plans
-- **Budget Manager**: Cost tracking, vendor negotiation
-- **Guest Coordinator**: RSVP tracking, seating arrangements
-- **Timeline Keeper**: Day-of scheduling, contingency planning
+- **ウェディングプランナー**: ベンダー調整、タイムライン作成
+- **イベントデザイナー**: テーマ開発、装飾計画
+- **予算マネージャー**: コスト追跡、ベンダー交渉
+- **ゲストコーディネーター**: RSVP追跡、席配置
+- **タイムラインキーパー**: 当日スケジュール、総合的計画
 
-### Hobby Mastery Pack
+### ホビーマスタリーパック
 
-Deep dive into specific hobbies:
+特定の趣味の深堀り：
 
-- **Garden Designer**: Plant selection, seasonal planning
-- **Brew Master**: Recipe formulation, process optimization
-- **Maker Assistant**: 3D printing, woodworking, crafts
-- **Collection Curator**: Organization, valuation, trading
-- **Photography Coach**: Composition, lighting, post-processing
+- **ガーデンデザイナー**: 植物選択、季節計画
+- **ブリューマスター**: レシピ策定、プロセス最適化
+- **メイカーアシスタント**: 3Dプリンティング、木工作業、クラフト
+- **コレクションキュレーター**: 整理、価値評価、取引
+- **フォトグラフィーコーチ**: 構図、照明、ポストプロセッシング
 
-### Scientific Research Pack
+### 科学研究パック
 
-Research acceleration tools:
+研究加速ツール：
 
-- **Literature Reviewer**: Paper summarization, gap analysis
-- **Hypothesis Generator**: Research question formulation
-- **Methodology Designer**: Experiment planning, control design
-- **Statistical Advisor**: Test selection, power analysis
-- **Grant Writer**: Proposal structure, impact statements
+- **文献レビューアー**: 論文要約、ギャップ分析
+- **仮説生成器**: 研究質問策定
+- **手法設計者**: 実験計画、対照設計
+- **統計アドバイザー**: 検定選択、検定力分析
+- **助成金ライター**: 提案構成、インパクトステートメント
 
-## Creating Your Own Expansion Pack
+## 独自の拡張パックの作成
 
-The next major release will include a new agent and expansion pack builder and a new expansion format.
+次のメジャーリリースでは、新しいエージェント・拡張パックビルダーと新しい拡張フォーマットが含まれる予定です。
 
-## Remember
+## 記憶しておいてください
 
-The BMad Method is more than a Software Development Agile Framework! Every expansion pack makes specialized knowledge and workflows more accessible to everyone.
+BMad Methodはソフトウェア開発アジャイルフレームワーク以上のものです！各拡張パックは、専門知識とワークフローを誰もがアクセスできるようにします。
 
-**What expertise will you share with the world?**
+**あなたはどのような専門知識を世界と共有しますか？**

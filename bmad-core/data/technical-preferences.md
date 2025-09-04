@@ -1,5 +1,5 @@
 <!-- Powered by BMAD™ Core -->
 
-# User-Defined Preferred Patterns and Preferences
+# ユーザー定義優先パターンと設定
 
-None Listed
+リストなし

@@ -1,18 +1,18 @@
-# BMad Method — User Guide
+# BMad Method — ユーザーガイド
 
-This guide will help you understand and effectively use the BMad Method for agile AI-driven planning and development.
+このガイドでは、アジャイルAI駆動の計画および開発におけるBMad Methodを理解し、効果的に使用する方法を説明します。
 
-## The BMad Plan and Execute Workflow
+## BMad計画・実行ワークフロー
 
-First, here is the full standard Greenfield Planning + Execution Workflow. Brownfield is very similar, but it's suggested to understand this greenfield first, even if on a simple project before tackling a brownfield project. The BMad Method needs to be installed to the root of your new project folder. For the planning phase, you can optionally perform it with powerful web agents, potentially resulting in higher quality results at a fraction of the cost it would take to complete if providing your own API key or credits in some Agentic tools. For planning, powerful thinking models and larger context - along with working as a partner with the agents will net the best results.
+まず、標準的なGreenfield計画+実行ワークフローの全体像を示します。Brownfieldも似ていますが、まず最初にこのGreenfieldを理解することをお勧めします。たとえ簡単なプロジェクトでもBrownfieldプロジェクトに取り組む前に理解しておくとよいでしょう。BMad Methodは新しいプロジェクトフォルダのルートにインストールする必要があります。計画フェーズでは、強力なWebエージェントを使用することもでき、独自のAPIキーやクレジットを提供する場合に比べて、より高品質な結果をコストのごく一部で得られる可能性があります。計画においては、強力な思考モデルとより大きなコンテキスト、そしてエージェントとのパートナーシップが最高の結果をもたらします。
 
-If you are going to use the BMad Method with a Brownfield project (an existing project), review **[Working in the Brownfield](./working-in-the-brownfield.md)**.
+BMad MethodをBrownfieldプロジェクト（既存プロジェクト）で使用する場合は、**[Brownfieldでの作業](./working-in-the-brownfield.md)**を確認してください。
 
-If the diagrams below don't render, install Markdown All in One along with the Markdown Preview Mermaid Support plugins to VSCode (or one of the forked clones). With these plugins, if you right click on the tab when open, there should be an Open Preview option, or check the IDE documentation.
+下記の図が表示されない場合は、VSCode（またはそのフォーククローンのいずれか）にMarkdown All in OneとMarkdown Preview Mermaid Supportプラグインをインストールしてください。これらのプラグインを使用すると、開いているときにタブを右クリックしてOpen Previewオプションを選択するか、IDEのドキュメントを確認してください。
 
-### The Planning Workflow (Web UI or Powerful IDE Agents)
+### 計画ワークフロー（Web UIまたは強力なIDEエージェント）
 
-Before development begins, BMad follows a structured planning workflow that's ideally done in web UI for cost efficiency:
+開発を始める前に、BMadはコスト効率のために理想的にはWeb UIで実行される構造化された計画ワークフローに従います：
 
 ```mermaid
 graph TD
@@ -73,29 +73,29 @@ graph TD
     style P fill:#34a853,color:#fff
 ```
 
-#### Web UI to IDE Transition
+#### Web UIからIDEへの移行
 
-**Critical Transition Point**: Once the PO confirms document alignment, you must switch from web UI to IDE to begin the development workflow:
+**重要な移行ポイント**: POがドキュメントの整合性を確認したら、Web UIからIDEに切り替えて開発ワークフローを開始する必要があります：
 
-1. **Copy Documents to Project**: Ensure `docs/prd.md` and `docs/architecture.md` are in your project's docs folder (or a custom location you can specify during installation)
-2. **Switch to IDE**: Open your project in your preferred Agentic IDE
-3. **Document Sharding**: Use the PO agent to shard the PRD and then the Architecture
-4. **Begin Development**: Start the Core Development Cycle that follows
+1. **プロジェクトにドキュメントをコピー**: プロジェクトのdocsフォルダ（またはインストール時に指定できるカスタムの場所）に`docs/prd.md`と`docs/architecture.md`があることを確認します
+2. **IDEに切り替え**: 好みのAgentic IDEでプロジェクトを開きます
+3. **ドキュメントのシャーディング**: POエージェントを使用してPRD、次にArchitectureをシャードします
+4. **開発開始**: 以下のコア開発サイクルを開始します
 
-#### Planning Artifacts (Standard Paths)
+#### 計画アーティファクト（標準パス）
 
 ```text
 PRD              → docs/prd.md
-Architecture     → docs/architecture.md
-Sharded Epics    → docs/epics/
-Sharded Stories  → docs/stories/
-QA Assessments   → docs/qa/assessments/
-QA Gates         → docs/qa/gates/
+アーキテクチャ      → docs/architecture.md
+シャードエピック     → docs/epics/
+シャードストーリー    → docs/stories/
+QA評価           → docs/qa/assessments/
+QAゲート          → docs/qa/gates/
 ```
 
-### The Core Development Cycle (IDE)
+### コア開発サイクル（IDE）
 
-Once planning is complete and documents are sharded, BMad follows a structured development workflow:
+計画が完了し、ドキュメントがシャードされると、BMadは構造化された開発ワークフローに従います：
 
 ```mermaid
 graph TD
@@ -160,30 +160,30 @@ graph TD
     style Z fill:#ffd54f,color:#000
 ```
 
-## Prerequisites
+## 前提条件
 
-Before installing BMad Method, ensure you have:
+BMad Methodをインストールする前に、以下があることを確認してください：
 
 - **Node.js** ≥ 18, **npm** ≥ 9
-- **Git** installed and configured
-- **(Optional)** VS Code with "Markdown All in One" + "Markdown Preview Mermaid Support" extensions
+- **Git** がインストールされ設定済み
+- **（オプション）** "Markdown All in One" + "Markdown Preview Mermaid Support"拡張機能を備えたVS Code
 
-## Installation
+## インストール
 
-### Optional
+### オプション
 
-If you want to do the planning on the web with Claude (Sonnet 4 or Opus), Gemini Gem (2.5 Pro), or Custom GPTs:
+Claude（Sonnet 4またはOpus）、Gemini Gem（2.5 Pro）、またはCustom GPTsでWeb上で計画を行いたい場合：
 
-1. Navigate to `dist/teams/`
-2. Copy `team-fullstack.txt`
-3. Create new Gemini Gem or CustomGPT
-4. Upload file with instructions: "Your critical operating instructions are attached, do not break character as directed"
-5. Type `/help` to see available commands
+1. `dist/teams/`に移動
+2. `team-fullstack.txt`をコピー
+3. 新しいGemini GemまたはCustomGPTを作成
+4. 次の指示でファイルをアップロード：「重要な操作指示が添付されています。指示に従ってキャラクターを崩さないでください」
+5. `/help`と入力して利用可能なコマンドを確認
 
-### IDE Project Setup
+### IDEプロジェクト設定
 
 ```bash
-# Interactive installation (recommended)
+# インタラクティブなインストール（推奨）
 npx bmad-method install
 ```
 

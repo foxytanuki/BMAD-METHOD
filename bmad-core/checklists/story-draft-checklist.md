@@ -1,8 +1,8 @@
 <!-- Powered by BMAD™ Core -->
 
-# Story Draft Checklist
+# ストーリードラフトチェックリスト
 
-The Scrum Master should use this checklist to validate that each story contains sufficient context for a developer agent to implement it successfully, while assuming the dev agent has reasonable capabilities to figure things out.
+スクラムマスターは、このチェックリストを使用して、各ストーリーが開発エージェントに成功裏に実装されるのに十分なコンテキストが含まれていることを検証します。この際、開発エージェントが物事を理解する合理的な能力を持っていることを前提とします。
 
 [[LLM: INITIALIZATION INSTRUCTIONS - STORY DRAFT VALIDATION
 
@@ -32,7 +32,7 @@ REMEMBER: We assume competent developer agents who can:
 
 We're checking for SUFFICIENT guidance, not exhaustive detail.]]
 
-## 1. GOAL & CONTEXT CLARITY
+## 1. 目標とコンテキストの明確性
 
 [[LLM: Without clear goals, developers build the wrong thing. Verify:
 
@@ -42,13 +42,13 @@ We're checking for SUFFICIENT guidance, not exhaustive detail.]]
 4. Dependencies are explicit ("requires Story X to be complete")
 5. Success looks like something specific, not vague]]
 
-- [ ] Story goal/purpose is clearly stated
-- [ ] Relationship to epic goals is evident
-- [ ] How the story fits into overall system flow is explained
-- [ ] Dependencies on previous stories are identified (if applicable)
-- [ ] Business context and value are clear
+- [ ] ストーリーの目標/目的が明確に記述済み
+- [ ] エピック目標との関係が明らか
+- [ ] ストーリーが全体システムフローにどう組み込まれるかが説明済み
+- [ ] 前のストーリーへの依存関係が特定済み（該当する場合）
+- [ ] ビジネスコンテキストと価値が明確
 
-## 2. TECHNICAL IMPLEMENTATION GUIDANCE
+## 2. 技術実装ガイダンス
 
 [[LLM: Developers need enough technical context to start coding. Check:
 
@@ -60,14 +60,14 @@ We're checking for SUFFICIENT guidance, not exhaustive detail.]]
 
 Note: We don't need every file listed - just the important ones.]]
 
-- [ ] Key files to create/modify are identified (not necessarily exhaustive)
-- [ ] Technologies specifically needed for this story are mentioned
-- [ ] Critical APIs or interfaces are sufficiently described
-- [ ] Necessary data models or structures are referenced
-- [ ] Required environment variables are listed (if applicable)
-- [ ] Any exceptions to standard coding patterns are noted
+- [ ] 作成/修正すべき主要ファイルが特定済み（必ずしも網羅的でなくてよい）
+- [ ] このストーリーに特に必要な技術が言及済み
+- [ ] 重要なAPIやインターフェースが十分に説明済み
+- [ ] 必要なデータモデルや構造が参照済み
+- [ ] 必要な環境変数がリスト済み（該当する場合）
+- [ ] 標準コーディングパターンへの例外が記述済み
 
-## 3. REFERENCE EFFECTIVENESS
+## 3. 参照の有効性
 
 [[LLM: References should help, not create a treasure hunt. Ensure:
 
@@ -77,12 +77,12 @@ Note: We don't need every file listed - just the important ones.]]
 4. References are accessible (not broken links)
 5. Previous story context is summarized if needed]]
 
-- [ ] References to external documents point to specific relevant sections
-- [ ] Critical information from previous stories is summarized (not just referenced)
-- [ ] Context is provided for why references are relevant
-- [ ] References use consistent format (e.g., `docs/filename.md#section`)
+- [ ] 外部文書への参照が特定の関連セクションを指定
+- [ ] 前のストーリーからの重要情報が要約済み（単に参照するだけではなく）
+- [ ] 参照がなぜ関連性があるかのコンテキストが提供済み
+- [ ] 参照が一貫したフォーマットを使用（例：`docs/filename.md#section`）
 
-## 4. SELF-CONTAINMENT ASSESSMENT
+## 4. 自己完結性評価
 
 [[LLM: Stories should be mostly self-contained to avoid context switching. Verify:
 
@@ -92,12 +92,12 @@ Note: We don't need every file listed - just the important ones.]]
 4. Edge cases are mentioned (even if deferred)
 5. The story could be understood without reading 10 other documents]]
 
-- [ ] Core information needed is included (not overly reliant on external docs)
-- [ ] Implicit assumptions are made explicit
-- [ ] Domain-specific terms or concepts are explained
-- [ ] Edge cases or error scenarios are addressed
+- [ ] 必要なコア情報が含まれている（外部ドキュメントに過度に依存していない）
+- [ ] 暗黙の前提が明示的にされている
+- [ ] ドメイン固有の用語や概念が説明済み
+- [ ] エッジケースやエラーシナリオが対処済み
 
-## 5. TESTING GUIDANCE
+## 5. テストガイダンス
 
 [[LLM: Testing ensures the implementation actually works. Check:
 
@@ -107,12 +107,12 @@ Note: We don't need every file listed - just the important ones.]]
 4. Special test considerations are noted
 5. Acceptance criteria in the story are testable]]
 
-- [ ] Required testing approach is outlined
-- [ ] Key test scenarios are identified
-- [ ] Success criteria are defined
-- [ ] Special testing considerations are noted (if applicable)
+- [ ] 必要なテストアプローチが概説済み
+- [ ] 主要テストシナリオが特定済み
+- [ ] 成功基準が定義済み
+- [ ] 特別なテスト考慮事項が記述済み（該当する場合）
 
-## VALIDATION RESULT
+## 検証結果
 
 [[LLM: FINAL STORY VALIDATION REPORT
 
@@ -140,16 +140,16 @@ Generate a concise validation report:
 
 Be pragmatic - perfect documentation doesn't exist, but it must be enough to provide the extreme context a dev agent needs to get the work down and not create a mess.]]
 
-| Category                             | Status | Issues |
+| カテゴリー                             | ステータス | 問題 |
 | ------------------------------------ | ------ | ------ |
-| 1. Goal & Context Clarity            | _TBD_  |        |
-| 2. Technical Implementation Guidance | _TBD_  |        |
-| 3. Reference Effectiveness           | _TBD_  |        |
-| 4. Self-Containment Assessment       | _TBD_  |        |
-| 5. Testing Guidance                  | _TBD_  |        |
+| 1. 目標とコンテキストの明確性            | _判定中_  |        |
+| 2. 技術実装ガイダンス | _判定中_  |        |
+| 3. 参照の有効性           | _判定中_  |        |
+| 4. 自己完結性評価       | _判定中_  |        |
+| 5. テストガイダンス                  | _判定中_  |        |
 
-**Final Assessment:**
+**最終評価:**
 
-- READY: The story provides sufficient context for implementation
-- NEEDS REVISION: The story requires updates (see issues)
-- BLOCKED: External information required (specify what information)
+- 準備完了: ストーリーが実装に十分なコンテキストを提供
+- 修正必要: ストーリーの更新が必要（問題を参照）
+- ブロック済み: 外部情報が必要（必要な情報を指定）

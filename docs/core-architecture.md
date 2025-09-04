@@ -1,18 +1,18 @@
-# BMad Method: Core Architecture
+# BMad Method: コアアーキテクチャ
 
-## 1. Overview
+## 1. 概要
 
-The BMad Method is designed to provide agentic modes, tasks and templates to allow repeatable helpful workflows be it for agile agentic development, or expansion into vastly different domains. The core purpose of the project is to provide a structured yet flexible set of prompts, templates, and workflows that users can employ to guide AI agents (like Gemini, Claude, or ChatGPT) to perform complex tasks, guided discussions, or other meaningful domain specific flows in a predictable, high-quality manner.
+BMad Methodは、アジャイルエージェント開発、または大きく異なるドメインへの拡張のための繰り返し可能な有益なワークフローを可能にするエージェントモード、タスク、テンプレートを提供するよう設計されています。このプロジェクトの中核目的は、ユーザーがAIエージェント（Gemini、Claude、ChatGPTなど）をガイドして、複雑なタスク、ガイド付き議論、または他の意味のあるドメイン固有のフローを予測可能で高品質な方法で実行させるための構造化されているが柔軟なプロンプト、テンプレート、ワークフローのセットを提供することです。
 
-The systems core module facilitates a full development lifecycle tailored to the challenges of current modern AI Agentic tooling:
+システムのコアモジュールは、現代のAIエージェントツーリングの課題に対応した完全な開発ライフサイクルを促進します：
 
-1. **Ideation & Planning**: Brainstorming, market research, and creating project briefs.
-2. **Architecture & Design**: Defining system architecture and UI/UX specifications.
-3. **Development Execution**: A cyclical workflow where a Scrum Master (SM) agent drafts stories with extremely specific context and a Developer (Dev) agent implements them one at a time. This process works for both new (Greenfield) and existing (Brownfield) projects.
+1. **発想&計画**: ブレインストーミング、市場調査、プロジェクト概要作成。
+2. **アーキテクチャ&設計**: システムアーキテクチャとUI/UX仕様の定義。
+3. **開発実行**: Scrum Master（SM）エージェントが非常に具体的なコンテキストでストーリーを作成し、Developer（Dev）エージェントがそれらを一つずつ実装するサイクリックなワークフロー。このプロセスは新しい（Greenfield）プロジェクトと既存（Brownfield）プロジェクトの両方で機能します。
 
-## 2. System Architecture Diagram
+## 2. システムアーキテクチャ図
 
-The entire BMad-Method ecosystem is designed around the installed `bmad-core` directory, which acts as the brain of the operation. The `tools` directory provides the means to process and package this brain for different environments.
+BMad-Methodエコシステム全体は、操作の頭脳として機能するインストールされた`bmad-core`ディレクトリを中心に設計されています。`tools`ディレクトリは、この頭脳を異なる環境用に処理およびパッケージする手段を提供します。
 
 ```mermaid
 graph TD
@@ -59,35 +59,35 @@ graph TD
     style J fill:#34a853,color:#fff
 ```
 
-## 3. Core Components
+## 3. コアコンポーネント
 
-The `bmad-core` directory contains all the definitions and resources that give the agents their capabilities.
+`bmad-core`ディレクトリには、エージェントに機能を与えるすべての定義とリソースが含まれています。
 
-### 3.1. Agents (`bmad-core/agents/`)
+### 3.1. エージェント (`bmad-core/agents/`)
 
-- **Purpose**: These are the foundational building blocks of the system. Each markdown file (e.g., `bmad-master.md`, `pm.md`, `dev.md`) defines the persona, capabilities, and dependencies of a single AI agent.
-- **Structure**: An agent file contains a YAML header that specifies its role, persona, dependencies, and startup instructions. These dependencies are lists of tasks, templates, checklists, and data files that the agent is allowed to use.
-- **Startup Instructions**: Agents can include startup sequences that load project-specific documentation from the `docs/` folder, such as coding standards, API specifications, or project structure documents. This provides immediate project context upon activation.
-- **Document Integration**: Agents can reference and load documents from the project's `docs/` folder as part of tasks, workflows, or startup sequences. Users can also drag documents directly into chat interfaces to provide additional context.
-- **Example**: The `bmad-master` agent lists its dependencies, which tells the build tool which files to include in a web bundle and informs the agent of its own capabilities.
+- **目的**: これらはシステムの基礎的なビルディングブロックです。各markdownファイル（例：`bmad-master.md`、`pm.md`、`dev.md`）は、単一のAIエージェントのペルソナ、機能、依存関係を定義します。
+- **構造**: エージェントファイルには、その役割、ペルソナ、依存関係、起動手順を指定するYAMLヘッダーが含まれています。これらの依存関係は、エージェントが使用を許可されたタスク、テンプレート、チェックリスト、データファイルのリストです。
+- **起動手順**: エージェントは、コーディング規約、API仕様、プロジェクト構造ドキュメントなどのプロジェクト固有のドキュメントを`docs/`フォルダからロードする起動シーケンスを含むことができます。これにより、有効化時に即座にプロジェクトコンテキストが提供されます。
+- **ドキュメント統合**: エージェントは、タスク、ワークフロー、または起動シーケンスの一部としてプロジェクトの`docs/`フォルダからドキュメントを参照およびロードすることができます。ユーザーは、追加のコンテキストを提供するためにドキュメントをチャットインターフェースに直接ドラッグすることもできます。
+- **例**: `bmad-master`エージェントはその依存関係をリストし、これにWebバンドルに含めるファイルをビルドツールに指示し、エージェントにその機能を通知します。
 
-### 3.2. Agent Teams (`bmad-core/agent-teams/`)
+### 3.2. エージェントチーム (`bmad-core/agent-teams/`)
 
-- **Purpose**: Team files (e.g., `team-all.yaml`) define collections of agents and workflows that are bundled together for a specific purpose, like "full-stack development" or "backend-only". This creates a larger, pre-packaged context for web UI environments.
-- **Structure**: A team file lists the agents to include. It can use wildcards, such as `"*"` to include all agents. This allows for the creation of comprehensive bundles like `team-all`.
+- **目的**: チームファイル（例：`team-all.yaml`）は、「フルスタック開発」や「バックエンドのみ」などの特定の目的のために一緒にバンドルされるエージェントとワークフローのコレクションを定義します。これにWeb UI環境用のより大きな、事前パッケージされたコンテキストを作成します。
+- **構造**: チームファイルは含めるエージェントをリストします。すべてのエージェントを含めるために`"*"`などのワイルドカードを使用できます。これにより`team-all`のような包括的なバンドルの作成が可能になります。
 
-### 3.3. Workflows (`bmad-core/workflows/`)
+### 3.3. ワークフロー (`bmad-core/workflows/`)
 
-- **Purpose**: Workflows are YAML files (e.g., `greenfield-fullstack.yaml`) that define a prescribed sequence of steps and agent interactions for a specific project type. They act as a strategic guide for the user and the `bmad-orchestrator` agent.
-- **Structure**: A workflow defines sequences for both complex and simple projects, lists the agents involved at each step, the artifacts they create, and the conditions for moving from one step to the next. It often includes a Mermaid diagram for visualization.
+- **目的**: ワークフローはYAMLファイル（例：`greenfield-fullstack.yaml`）で、特定のプロジェクトタイプに対する所定のステップシーケンスとエージェント間の対話を定義します。これらはユーザーと`bmad-orchestrator`エージェントの戦略的ガイドとして機能します。
+- **構造**: ワークフローは複雑なプロジェクトとシンプルなプロジェクトの両方のシーケンスを定義し、各ステップで関与するエージェント、彼らが作成する成果物、そしてあるステップから次のステップに移行するための条件をリストします。視覚化のためにMermaid図を含むことがよくあります。
 
-### 3.4. Reusable Resources (`templates`, `tasks`, `checklists`, `data`)
+### 3.4. 再利用可能リソース (`templates`, `tasks`, `checklists`, `data`)
 
-- **Purpose**: These folders house the modular components that are dynamically loaded by agents based on their dependencies.
-  - **`templates/`**: Contains markdown templates for common documents like PRDs, architecture specifications, and user stories.
-  - **`tasks/`**: Defines the instructions for carrying out specific, repeatable actions like "shard-doc" or "create-next-story".
-  - **`checklists/`**: Provides quality assurance checklists for agents like the Product Owner (`po`) or Architect.
-  - **`data/`**: Contains the core knowledge base (`bmad-kb.md`), technical preferences (`technical-preferences.md`), and other key data files.
+- **目的**: これらのフォルダは、エージェンツがその依存関係に基づいて動的にロードするモジュラーコンポーネントを格納します。
+  - **`templates/`**: PRD、アーキテクチャ仕様、ユーザーストーリーなどの一般的なドキュメント用のmarkdownテンプレートを含んでいます。
+  - **`tasks/`**: "shard-doc"や"create-next-story"などの特定の繰り返し可能なアクションを実行するための指示を定義します。
+  - **`checklists/`**: Product Owner (`po`)やArchitectなどのエージェント用の品質保証チェックリストを提供します。
+  - **`data/`**: コアナレッジベース (`bmad-kb.md`)、技術的好み (`technical-preferences.md`)、その他の重要なデータファイルを含んでいます。
 
 #### 3.4.1. Template Processing System
 
@@ -127,9 +127,9 @@ The file typically includes preferred technology stacks, design patterns, extern
 **Evolution Over Time:**
 Users are encouraged to continuously update this file with discoveries from projects, adding both positive preferences and technologies to avoid, creating a personalized knowledge base that improves agent recommendations over time.
 
-## 4. The Build & Delivery Process
+## 4. ビルド&デリバリープロセス
 
-The framework is designed for two primary environments: local IDEs and web-based AI chat interfaces. The `web-builder.js` script is the key to supporting the latter.
+フレームワークは2つの主要な環境用に設計されています：ローカルIDEとWebベースのAIチャットインターフェースです。`web-builder.js`スクリプトは後者をサポートするための鍵です。
 
 ### 4.1. Web Builder (`tools/builders/web-builder.js`)
 

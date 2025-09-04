@@ -1,86 +1,86 @@
 <!-- Powered by BMAD™ Core -->
 
-# BMAD™ Knowledge Base
+# BMAD™ ナレッジベース
 
-## Overview
+## 概要
 
-BMAD-METHOD™ (Breakthrough Method of Agile AI-driven Development) is a framework that combines AI agents with Agile development methodologies. The v4 system introduces a modular architecture with improved dependency management, bundle optimization, and support for both web and IDE environments.
+BMAD-METHOD™（Breakthrough Method of Agile AI-driven Development）は、AIエージェントとアジャイル開発手法を組み合わせたフレームワークです。v4システムでは、改善された依存管理、バンドル最適化、Webと統合開発環境（IDE）の両方のサポートを備えたモジュラーアーキテクチャを導入しています。
 
-### Key Features
+### 主要機能
 
-- **Modular Agent System**: Specialized AI agents for each Agile role
-- **Build System**: Automated dependency resolution and optimization
-- **Dual Environment Support**: Optimized for both web UIs and IDEs
-- **Reusable Resources**: Portable templates, tasks, and checklists
-- **Slash Command Integration**: Quick agent switching and control
+- **モジュラーエージェントシステム**: 各アジャイル役割用の専門AIエージェント
+- **ビルドシステム**: 自動化された依存関係解決と最適化
+- **デュアル環境サポート**: WebUIとIDEの両方に最適化
+- **再利用可能リソース**: ポータブルテンプレート、タスク、チェックリスト
+- **スラッシュコマンド統合**: 迅速なエージェント切り替えと制御
 
-### When to Use BMad
+### BMadを使用する場面
 
-- **New Projects (Greenfield)**: Complete end-to-end development
-- **Existing Projects (Brownfield)**: Feature additions and enhancements
-- **Team Collaboration**: Multiple roles working together
-- **Quality Assurance**: Structured testing and validation
-- **Documentation**: Professional PRDs, architecture docs, user stories
+- **新規プロジェクト（グリーンフィールド）**: 完全なエンドツーエンド開発
+- **既存プロジェクト（ブラウンフィールド）**: 機能追加と拡張
+- **チーム協働**: 複数の役割が協力
+- **品質保証**: 構造化されたテストと検証
+- **文書化**: プロフェッショナルなPRD、アーキテクチャドキュメント、ユーザーストーリー
 
-## How BMad Works
+## BMadの動作原理
 
-### The Core Method
+### コアメソッド
 
-BMad transforms you into a "Vibe CEO" - directing a team of specialized AI agents through structured workflows. Here's how:
+BMadはあなたを「Vibe CEO」に変身させ、構造化されたワークフローを通じて専門AIエージェントのチームを指揮します。方法は以下の通りです：
 
-1. **You Direct, AI Executes**: You provide vision and decisions; agents handle implementation details
-2. **Specialized Agents**: Each agent masters one role (PM, Developer, Architect, etc.)
-3. **Structured Workflows**: Proven patterns guide you from idea to deployed code
-4. **Clean Handoffs**: Fresh context windows ensure agents stay focused and effective
+1. **あなたが指揮、AIが実行**: あなたがビジョンと決定を提供し、エージェントが実装詳細を処理
+2. **専門エージェント**: 各エージェントが1つの役割をマスター（PM、開発者、アーキテクト等）
+3. **構造化ワークフロー**: 実証済みパターンがアイデアからデプロイ済みコードまで導く
+4. **クリーンな引き継ぎ**: 新しいコンテキストウィンドウがエージェントの集中と効果を保証
 
-### The Two-Phase Approach
+### 2段階アプローチ
 
-#### Phase 1: Planning (Web UI - Cost Effective)
+#### フェーズ1: 計画（Web UI - コスト効率的）
 
-- Use large context windows (Gemini's 1M tokens)
-- Generate comprehensive documents (PRD, Architecture)
-- Leverage multiple agents for brainstorming
-- Create once, use throughout development
+- 大規模コンテキストウィンドウを使用（Geminiの1Mトークン）
+- 包括的文書を生成（PRD、アーキテクチャ）
+- ブレインストーミングに複数エージェントを活用
+- 一度作成し、開発全体を通して使用
 
-#### Phase 2: Development (IDE - Implementation)
+#### フェーズ2: 開発（IDE - 実装）
 
-- Shard documents into manageable pieces
-- Execute focused SM → Dev cycles
-- One story at a time, sequential progress
-- Real-time file operations and testing
+- 文書を管理可能な断片に分割
+- 集中的なSM → Dev サイクルを実行
+- 一度に1つのストーリー、順次進行
+- リアルタイムファイル操作とテスト
 
-### The Development Loop
+### 開発ループ
 
 ```text
-1. SM Agent (New Chat) → Creates next story from sharded docs
-2. You → Review and approve story
-3. Dev Agent (New Chat) → Implements approved story
-4. QA Agent (New Chat) → Reviews and refactors code
-5. You → Verify completion
-6. Repeat until epic complete
+1. SMエージェント（新しいチャット） → 分割されたドキュメントから次のストーリーを作成
+2. あなた → ストーリーをレビューし承認
+3. Devエージェント（新しいチャット） → 承認されたストーリーを実装
+4. QAエージェント（新しいチャット） → コードをレビューしリファクタリング
+5. あなた → 完了を検証
+6. エピックが完了するまで繰り返し
 ```
 
-### Why This Works
+### なぜこの方法が機能するか
 
-- **Context Optimization**: Clean chats = better AI performance
-- **Role Clarity**: Agents don't context-switch = higher quality
-- **Incremental Progress**: Small stories = manageable complexity
-- **Human Oversight**: You validate each step = quality control
-- **Document-Driven**: Specs guide everything = consistency
+- **コンテキスト最適化**: クリーンなチャット = より良いAIパフォーマンス
+- **役割の明確性**: エージェントがコンテキスト切り替えしない = 高品質
+- **漸進的進歩**: 小さなストーリー = 管理可能な複雑さ
+- **人間の監視**: あなたが各ステップを検証 = 品質管理
+- **文書主導**: 仕様がすべてをガイド = 一貫性
 
-## Getting Started
+## 始め方
 
-### Quick Start Options
+### クイックスタートオプション
 
-#### Option 1: Web UI
+#### オプション1: Web UI
 
-**Best for**: ChatGPT, Claude, Gemini users who want to start immediately
+**最適**: すぐに始めたいChatGPT、Claude、Geminiユーザー
 
-1. Navigate to `dist/teams/`
-2. Copy `team-fullstack.txt` content
-3. Create new Gemini Gem or CustomGPT
-4. Upload file with instructions: "Your critical operating instructions are attached, do not break character as directed"
-5. Type `/help` to see available commands
+1. `dist/teams/`に移動
+2. `team-fullstack.txt`の内容をコピー
+3. 新しいGemini GemまたはCustomGPTを作成
+4. 指示と共にファイルをアップロード: 「あなたの重要な操作指示が添付されています。指示された通りにキャラクターを破らないでください」
+5. `/help`と入力して利用可能なコマンドを確認
 
 #### Option 2: IDE Integration
 
@@ -242,26 +242,26 @@ architectureSharded: true
 architectureShardedLocation: docs/architecture
 ```
 
-## Core Philosophy
+## コア哲学
 
-### Vibe CEO'ing
+### Vibe CEOとしての行動
 
-You are the "Vibe CEO" - thinking like a CEO with unlimited resources and a singular vision. Your AI agents are your high-powered team, and your role is to:
+あなたは「Vibe CEO」です - 無制限のリソースと単一のビジョンを持つCEOのように考えてください。AIエージェントはあなたの高機能チームであり、あなたの役割は：
 
-- **Direct**: Provide clear instructions and objectives
-- **Refine**: Iterate on outputs to achieve quality
-- **Oversee**: Maintain strategic alignment across all agents
+- **指揮**: 明確な指示と目標を提供
+- **洗練**: 品質達成のためにアウトプットを反復改善
+- **監督**: 全エージェント間で戦略的整合性を維持
 
-### Core Principles
+### コア原則
 
-1. **MAXIMIZE_AI_LEVERAGE**: Push the AI to deliver more. Challenge outputs and iterate.
-2. **QUALITY_CONTROL**: You are the ultimate arbiter of quality. Review all outputs.
-3. **STRATEGIC_OVERSIGHT**: Maintain the high-level vision and ensure alignment.
-4. **ITERATIVE_REFINEMENT**: Expect to revisit steps. This is not a linear process.
-5. **CLEAR_INSTRUCTIONS**: Precise requests lead to better outputs.
-6. **DOCUMENTATION_IS_KEY**: Good inputs (briefs, PRDs) lead to good outputs.
-7. **START_SMALL_SCALE_FAST**: Test concepts, then expand.
-8. **EMBRACE_THE_CHAOS**: Adapt and overcome challenges.
+1. **AI活用の最大化**: AIにより多くを提供させる。アウトプットに挑戦し反復改善。
+2. **品質管理**: あなたが品質の最終判断者。全アウトプットをレビュー。
+3. **戦略的監督**: 高レベルビジョンを維持し整合性を保証。
+4. **反復改善**: ステップを見直すことを期待。これは線形プロセスではない。
+5. **明確な指示**: 精密な要求がより良いアウトプットにつながる。
+6. **文書化の重要性**: 良い入力（ブリーフ、PRD）が良いアウトプットにつながる。
+7. **小さく始め、素早くスケール**: 概念をテストし、その後拡張。
+8. **混乱を受け入れる**: 適応し、課題を克服。
 
 ### Key Workflow Principles
 
@@ -273,25 +273,25 @@ You are the "Vibe CEO" - thinking like a CEO with unlimited resources and a sing
 
 ## Agent System
 
-### Core Development Team
+### コア開発チーム
 
-| Agent       | Role               | Primary Functions                       | When to Use                            |
+| エージェント       | 役割               | 主要機能                       | 使用タイミング                            |
 | ----------- | ------------------ | --------------------------------------- | -------------------------------------- |
-| `analyst`   | Business Analyst   | Market research, requirements gathering | Project planning, competitive analysis |
-| `pm`        | Product Manager    | PRD creation, feature prioritization    | Strategic planning, roadmaps           |
-| `architect` | Solution Architect | System design, technical architecture   | Complex systems, scalability planning  |
-| `dev`       | Developer          | Code implementation, debugging          | All development tasks                  |
-| `qa`        | QA Specialist      | Test planning, quality assurance        | Testing strategies, bug validation     |
-| `ux-expert` | UX Designer        | UI/UX design, prototypes                | User experience, interface design      |
-| `po`        | Product Owner      | Backlog management, story validation    | Story refinement, acceptance criteria  |
-| `sm`        | Scrum Master       | Sprint planning, story creation         | Project management, workflow           |
+| `analyst`   | ビジネスアナリスト   | 市場調査、要件収集 | プロジェクト計画、競合分析 |
+| `pm`        | プロダクトマネージャー    | PRD作成、機能優先順位付け    | 戦略計画、ロードマップ           |
+| `architect` | ソリューションアーキテクト | システム設計、技術アーキテクチャ   | 複雑システム、スケーラビリティ計画  |
+| `dev`       | 開発者          | コード実装、デバッグ          | 全開発タスク                  |
+| `qa`        | QAスペシャリスト      | テスト計画、品質保証        | テスト戦略、バグ検証     |
+| `ux-expert` | UXデザイナー        | UI/UX設計、プロトタイプ                | ユーザー体験、インターフェース設計      |
+| `po`        | プロダクトオーナー      | バックログ管理、ストーリー検証    | ストーリー精密化、受入基準  |
+| `sm`        | スクラムマスター       | スプリント計画、ストーリー作成         | プロジェクト管理、ワークフロー           |
 
-### Meta Agents
+### メタエージェント
 
-| Agent               | Role             | Primary Functions                     | When to Use                       |
+| エージェント               | 役割             | 主要機能                     | 使用タイミング                       |
 | ------------------- | ---------------- | ------------------------------------- | --------------------------------- |
-| `bmad-orchestrator` | Team Coordinator | Multi-agent workflows, role switching | Complex multi-role tasks          |
-| `bmad-master`       | Universal Expert | All capabilities without switching    | Single-session comprehensive work |
+| `bmad-orchestrator` | チームコーディネーター | マルチエージェントワークフロー、役割切り替え | 複雑なマルチロールタスク          |
+| `bmad-master`       | ユニバーサルエキスパート | 切り替えなしの全機能    | シングルセッション包括作業 |
 
 ### Agent Interaction Commands
 

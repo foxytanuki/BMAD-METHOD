@@ -1,147 +1,147 @@
-# Infrastructure & DevOps Expansion Pack
+# Infrastructure & DevOps 拡張パック
 
-## Overview
+## 概要
 
-This expansion pack extends BMad Method with comprehensive infrastructure and DevOps capabilities. It's designed for teams that need to define, implement, and manage cloud infrastructure alongside their application development.
+この拡張パックは、BMad Methodに包括的なインフラストラクチャとDevOps機能を追加します。アプリケーション開発と並行してクラウドインフラストラクチャの定義、実装、管理が必要なチームのために設計されています。
 
-## Purpose
+## 目的
 
-While the core BMad flow focuses on getting from business requirements to development (Analyst → PM → Architect → SM → Dev), many projects require sophisticated infrastructure planning and implementation. This expansion pack adds:
+コアBMadフローはビジネス要件から開発まで（Analyst → PM → Architect → SM → Dev）に焦点を当てていますが、多くのプロジェクトでは高度なインフラストラクチャの計画と実装が必要です。この拡張パックは以下を追加します：
 
-- Infrastructure architecture design capabilities
-- Platform engineering implementation workflows
-- DevOps automation and CI/CD pipeline design
-- Cloud resource management and optimization
-- Security and compliance validation
+- インフラストラクチャアーキテクチャ設計機能
+- プラットフォームエンジニアリング実装ワークフロー
+- DevOps自動化とCI/CDパイプライン設計
+- クラウドリソース管理と最適化
+- セキュリティとコンプライアンス検証
 
-## When to Use This Pack
+## このパックを使用するタイミング
 
-Install this expansion pack when your project requires:
+プロジェクトで以下が必要な場合にこの拡張パックをインストールしてください：
 
-- Cloud infrastructure design and implementation
-- Kubernetes/container platform setup
-- Service mesh and GitOps workflows
-- Infrastructure as Code (IaC) development
-- Platform engineering and DevOps practices
+- クラウドインフラストラクチャの設計と実装
+- Kubernetes/コンテナプラットフォームのセットアップ
+- Service MeshとGitOpsワークフロー
+- Infrastructure as Code (IaC) 開発
+- プラットフォームエンジニアリングとDevOpsプラクティス
 
-## What's Included
+## 含まれるもの
 
-### Agents
+### エージェント
 
-- `devops.yaml` - DevOps and Platform Engineering agent configuration
+- `devops.yaml` - DevOpsおよびプラットフォームエンジニアリングエージェント設定
 
-### Personas
+### ペルソナ
 
-- `devops.md` - DevOps Engineer persona (Alex)
+- `devops.md` - DevOpsエンジニアペルソナ (Alex)
 
-### IDE Agents
+### IDEエージェント
 
-- `devops.ide.md` - IDE-specific DevOps agent configuration
+- `devops.ide.md` - IDE固有のDevOpsエージェント設定
 
-### Templates
+### テンプレート
 
-- `infrastructure-architecture-tmpl.md` - Infrastructure architecture design template
-- `infrastructure-platform-from-arch-tmpl.md` - Platform implementation from architecture template
+- `infrastructure-architecture-tmpl.md` - インフラストラクチャアーキテクチャ設計テンプレート
+- `infrastructure-platform-from-arch-tmpl.md` - アーキテクチャからのプラットフォーム実装テンプレート
 
-### Tasks
+### タスク
 
-- `infra/validate-infrastructure.md` - Infrastructure validation workflow
-- `infra/review-infrastructure.md` - Infrastructure review process
+- `infra/validate-infrastructure.md` - インフラストラクチャ検証ワークフロー
+- `infra/review-infrastructure.md` - インフラストラクチャレビュープロセス
 
-### Checklists
+### チェックリスト
 
-- `infrastructure-checklist.md` - Comprehensive 16-section infrastructure validation checklist
+- `infrastructure-checklist.md` - 16セクションからなる包括的インフラストラクチャ検証チェックリスト
 
-## Integration with Core BMad
+## コアBMadとの統合
 
-This expansion pack integrates with the core BMad flow at these points:
+この拡張パックは、以下のポイントでコアBMadフローと統合します：
 
-1. **After Architecture Phase**: The Architect can trigger infrastructure architecture design
-2. **Parallel to Development**: Infrastructure implementation can proceed alongside application development
-3. **Before Deployment**: Infrastructure must be validated before application deployment
+1. **アーキテクチャフェーズ後**: Architectがインフラストラクチャアーキテクチャ設計をトリガー可能
+2. **開発と並行**: インフラストラクチャ実装はアプリケーション開発と並行して進行可能
+3. **デプロイ前**: アプリケーションデプロイ前にインフラストラクチャを検証必要
 
-## Installation
+## インストール
 
-To install this expansion pack, run:
+この拡張パックをインストールするには、以下を実行：
 
 ```bash
 npm run install:expansion infrastructure
 ```
 
-Or manually:
+または手動で：
 
 ```bash
 node tools/install-expansion-pack.js infrastructure
 ```
 
-This will:
+これにより：
 
-1. Copy all files to their appropriate locations in `.bmad-core/`
-2. Update any necessary configurations
-3. Make the DevOps agent available in teams
+1. すべてのファイルが`.bmad-core/`内の適切な場所にコピーされます
+2. 必要な設定が更新されます
+3. DevOpsエージェントがチームで利用可能になります
 
-## Usage Examples
+## 使用例
 
-### 1. Infrastructure Architecture Design
+### 1. インフラストラクチャアーキテクチャ設計
 
-After the main architecture is complete:
+メインアーキテクチャが完成後：
 
 ```bash
-# Using the Architect agent
+# Architectエージェントを使用
 *create-infrastructure
 
-# Or directly with DevOps agent
+# またはDevOpsエージェントで直接
 npm run agent devops
 ```
 
-### 2. Platform Implementation
+### 2. プラットフォーム実装
 
-With an approved infrastructure architecture:
+承認されたインフラストラクチャアーキテクチャがある場合：
 
 ```bash
-# DevOps agent implements the platform
+# DevOpsエージェントがプラットフォームを実装
 *implement-platform
 ```
 
-### 3. Infrastructure Validation
+### 3. インフラストラクチャ検証
 
-Before deployment:
+デプロイ前：
 
 ```bash
-# Validate infrastructure against checklist
+# チェックリストに対してインフラストラクチャを検証
 *validate-infra
 ```
 
-## Team Integration
+## チーム統合
 
-The DevOps agent can be added to team configurations:
+DevOpsエージェントはチーム設定に追加できます：
 
-- `team-technical.yaml` - For technical implementation teams
-- `team-full-org.yaml` - For complete organizational teams
+- `team-technical.yaml` - 技術実装チーム用
+- `team-full-org.yaml` - 完全な組織チーム用
 
-## Dependencies
+## 依存関係
 
-This expansion pack works best when used with:
+この拡張パックは以下と組み合わせて使用すると最適です：
 
-- Core BMad agents (especially Architect)
-- Technical preferences documentation
-- Approved PRD and system architecture
+- コアBMadエージェント（特にArchitect）
+- 技術的好みドキュメント
+- 承認されたPRDとシステムアーキテクチャ
 
-## Customization
+## カスタマイゼーション
 
-You can customize this expansion pack by:
+以下の方法でこの拡張パックをカスタマイズできます：
 
-1. Modifying the infrastructure templates for your cloud provider
-2. Adjusting the checklist items for your compliance needs
-3. Adding custom tasks for your specific workflows
+1. クラウドプロバイダーに合わせてインフラストラクチャテンプレートを修正
+2. コンプライアンスニーズに合わせてチェックリスト項目を調整
+3. 特定のワークフロー用にカスタムタスクを追加
 
-## Notes
+## 注意事項
 
-- Infrastructure work requires real-world cloud credentials and configurations
-- The templates use placeholders ({{variable}}) that need actual values
-- Always validate infrastructure changes before production deployment
+- インフラストラクチャ作業には実際のクラウド認証情報と設定が必要です
+- テンプレートは実際の値が必要なプレースホルダー ({{variable}}) を使用しています
+- プロダクションデプロイ前には必ずインフラストラクチャの変更を検証してください
 
 ---
 
-_Version: 1.0_
-_Compatible with: BMad Method v4_
+_バージョン: 1.0_
+_互換性: BMad Method v4_

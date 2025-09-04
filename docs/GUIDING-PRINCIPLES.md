@@ -1,91 +1,91 @@
-# BMad Method Guiding Principles
+# BMad Method 指導原則
 
-The BMad Method is a natural language framework for AI-assisted software development. These principles ensure contributions maintain the method's effectiveness.
+BMad MethodはAI支援ソフトウェア開発のための自然言語フレームワークです。これらの原則は、貢献がメソッドの有効性を維持することを保証します。
 
-## Core Principles
+## コア原則
 
-### 1. Dev Agents Must Be Lean
+### 1. Devエージェントはリーンでなければならない
 
-- **Minimize dev agent dependencies**: Development agents that work in IDEs must have minimal context overhead
-- **Save context for code**: Every line counts - dev agents should focus on coding, not documentation
-- **Web agents can be larger**: Planning agents (PRD Writer, Architect) used in web UI can have more complex tasks and dependencies
-- **Small files, loaded on demand**: Multiple small, focused files are better than large files with many branches
+- **devエージェントの依存関係を最小限に**: IDEで動作する開発エージェントは最小限のコンテキストオーバーヘッドでなければならない
+- **コードのためにコンテキストを節約**: すべての行が重要 - devエージェントはドキュメントではなくコーディングに焦点を当てるべき
+- **Webエージェントはより大きくできる**: Web UIで使用される計画エージェント（PRD Writer、Architect）はより複雑なタスクと依存関係を持つことができる
+- **小さなファイル、オンデマンド読み込み**: 多数の小さく焦点を絞ったファイルは、多くのブランチを持つ大きなファイルより優れている
 
-### 2. Natural Language First
+### 2. 自然言語第一
 
-- **Everything is markdown**: Agents, tasks, templates - all written in plain English
-- **No code in core**: The framework itself contains no programming code, only natural language instructions
-- **Self-contained templates**: Templates are defined as YAML files with structured sections that include metadata, workflow configuration, and detailed instructions for content generation
+- **すべてはmarkdown**: エージェント、タスク、テンプレート - すべて素の英語で書かれている
+- **コアにコードはなし**: フレームワーク自体にはプログラミングコードは含まれておらず、自然言語の指示のみが含まれている
+- **自己完結型テンプレート**: テンプレートは、メタデータ、ワークフロー設定、コンテンツ生成のための詳細な指示を含む構造化されたセクションを持つYAMLファイルとして定義されている
 
-### 3. Agent and Task Design
+### 3. エージェントとタスクの設計
 
-- **Agents define roles**: Each agent is a persona with specific expertise (e.g., Frontend Developer, API Developer)
-- **Tasks are procedures**: Step-by-step instructions an agent follows to complete work
-- **Templates are outputs**: Structured documents with embedded instructions for generation
-- **Dependencies matter**: Explicitly declare only what's needed
+- **エージェントは役割を定義する**: 各エージェントは特定の専門知識を持つペルソナ（例：Frontend Developer、API Developer）
+- **タスクは手順**: エージェントが作業を完了するために従うステップバイステップの指示
+- **テンプレートは出力**: 生成のための組み込み指示を持つ構造化ドキュメント
+- **依存関係が重要**: 必要なものだけを明示的に宣言する
 
-## Practical Guidelines
+## 実用的ガイドライン
 
-### When to Add to Core
+### コアに追加するべき時
 
-- Universal software development needs only
-- Doesn't bloat dev agent contexts
-- Follows existing agent/task/template patterns
+- 汎用的なソフトウェア開発ニーズのみ
+- devエージェントコンテキストを肥大化しない
+- 既存のエージェント/タスク/テンプレートパターンに従う
 
-### When to Create Expansion Packs
+### 拡張パックを作成するべき時
 
-- Domain-specific needs beyond software development
-- Non-technical domains (business, wellness, education, creative)
-- Specialized technical domains (games, infrastructure, mobile)
-- Heavy documentation or knowledge bases
-- Anything that would bloat core agents
+- ソフトウェア開発を超えたドメイン固有のニーズ
+- 非技術系ドメイン（ビジネス、ウェルネス、教育、クリエイティブ）
+- 特化した技術系ドメイン（ゲーム、インフラ、モバイル）
+- 大量のドキュメントやナレッジベース
+- コアエージェントを肥大化する可能性のあるもの
 
-See [Expansion Packs Guide](../docs/expansion-packs.md) for detailed examples and ideas.
+詳細な例とアイデアについては[拡張パックガイド](../docs/expansion-packs.md)を参照してください。
 
-### Agent Design Rules
+### エージェント設計ルール
 
-1. **Web/Planning Agents**: Can have richer context, multiple tasks, extensive templates
-2. **Dev Agents**: Minimal dependencies, focused on code generation, lean task sets
-3. **All Agents**: Clear persona, specific expertise, well-defined capabilities
+1. **Web/計画エージェント**: より豊かなコンテキスト、複数のタスク、幅幅いテンプレートを持つことができる
+2. **Devエージェント**: 最小限の依存関係、コード生成に集中、リーンなタスクセット
+3. **すべてのエージェント**: 明確なペルソナ、特定の専門知識、明确に定義された機能
 
-### Task Writing Rules
+### タスク作成ルール
 
-1. Write clear step-by-step procedures
-2. Use markdown formatting for readability
-3. Keep dev agent tasks focused and concise
-4. Planning tasks can be more elaborate
-5. **Prefer multiple small tasks over one large branching task**
-   - Instead of one task with many conditional paths
-   - Create multiple focused tasks the agent can choose from
-   - This keeps context overhead minimal
-6. **Reuse common tasks** - Don't create new document creation tasks
-   - Use the existing `create-doc` task
-   - Pass the appropriate YAML template with structured sections
-   - This maintains consistency and reduces duplication
+1. 明確なステップバイステップの手順を書く
+2. 読みやすさのためにmarkdownフォーマットを使用
+3. devエージェントのタスクは集中的で簡潔に保つ
+4. 計画タスクはより精巧に作ることができる
+5. **一つの大きな分岐タスクより複数の小さなタスクを好む**
+   - 多くの条件パスを持つ一つのタスクの代わりに
+   - エージェントが選択できる複数の集中的なタスクを作成
+   - これによりコンテキストオーバーヘッドを最小限に保つ
+6. **共通タスクを再利用** - 新しいドキュメント作成タスクを作成しない
+   - 既存の`create-doc`タスクを使用
+   - 構造化されたセクションを持つ適切なYAMLテンプレートを渡す
+   - これにより一貫性を維持し重複を減らす
 
-### Template Rules
+### テンプレートルール
 
-Templates follow the [BMad Document Template](../common/utils/bmad-doc-template.md) specification using YAML format:
+テンプレートはYAMLフォーマットを使用して[BMad Document Template](../common/utils/bmad-doc-template.md)仕様に従います：
 
-1. **Structure**: Templates are defined in YAML with clear metadata, workflow configuration, and section hierarchy
-2. **Separation of Concerns**: Instructions for LLMs are in `instruction` fields, separate from content
-3. **Reusability**: Templates are agent-agnostic and can be used across different agents
-4. **Key Components**:
-   - `template` block for metadata (id, name, version, output settings)
-   - `workflow` block for interaction mode configuration
-   - `sections` array defining document structure with nested subsections
-   - Each section has `id`, `title`, and `instruction` fields
-5. **Advanced Features**:
-   - Variable substitution using `{{variable_name}}` syntax
-   - Conditional sections with `condition` field
-   - Repeatable sections with `repeatable: true`
-   - Agent permissions with `owner` and `editors` fields
-   - Examples arrays for guidance (never included in output)
-6. **Clean Output**: YAML structure ensures all processing logic stays separate from generated content
+1. **構造**: テンプレートは明確なメタデータ、ワークフロー設定、セクション階層を持つYAMLで定義される
+2. **関心の分離**: LLMへの指示は`instruction`フィールドにあり、コンテントから分離されている
+3. **再利用性**: テンプレートはエージェントに依存せず、異なるエージェント間で使用できる
+4. **主要コンポーネント**:
+   - メタデータ用の`template`ブロック（id、name、version、出力設定）
+   - 対話モード設定用の`workflow`ブロック
+   - ネストされたサブセクションでドキュメント構造を定義する`sections`配列
+   - 各セクションは`id`、`title`、`instruction`フィールドを持つ
+5. **高度な機能**:
+   - `{{variable_name}}`構文を使用した変数置換
+   - `condition`フィールドを持つ条件付きセクション
+   - `repeatable: true`で繰り返し可能なセクション
+   - `owner`と`editors`フィールドでエージェント権限
+   - ガイダンス用の例配列（出力には含まれない）
+6. **クリーンな出力**: YAML構造により、すべての処理ロジックが生成されたコンテントから分離されることが保証される
 
-## Remember
+## 記憶しておくこと
 
-- The power is in natural language orchestration, not code
-- Dev agents code, planning agents plan
-- Keep dev agents lean for maximum coding efficiency
-- Expansion packs handle specialized domains
+- 力はコードではなく自然言語統制にある
+- Devエージェントはコードを書き、計画エージェントは計画を立てる
+- 最大のコーディング効率のためにdevエージェントをリーンに保つ
+- 拡張パックが特化したドメインを処理する

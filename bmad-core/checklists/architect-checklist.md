@@ -1,8 +1,8 @@
 <!-- Powered by BMAD™ Core -->
 
-# Architect Solution Validation Checklist
+# アーキテクトソリューション検証チェックリスト
 
-This checklist serves as a comprehensive framework for the Architect to validate the technical design and architecture before development execution. The Architect should systematically work through each item, ensuring the architecture is robust, scalable, secure, and aligned with the product requirements.
+このチェックリストは、アーキテクトが開発実行前に技術設計とアーキテクチャを検証するための包括的なフレームワークです。アーキテクトは各項目を系統的に作業し、アーキテクチャが堅牢でスケーラブル、安全で、製品要件と整合していることを保証する必要があります。
 
 [[LLM: INITIALIZATION INSTRUCTIONS - REQUIRED ARTIFACTS
 
@@ -44,53 +44,53 @@ Ask the user if they want to work through the checklist:
 - Section by section (interactive mode) - Review each section, present findings, get confirmation before proceeding
 - All at once (comprehensive mode) - Complete full analysis and present comprehensive report at end]]
 
-## 1. REQUIREMENTS ALIGNMENT
+## 1. 要件整合性
 
 [[LLM: Before evaluating this section, take a moment to fully understand the product's purpose and goals from the PRD. What is the core problem being solved? Who are the users? What are the critical success factors? Keep these in mind as you validate alignment. For each item, don't just check if it's mentioned - verify that the architecture provides a concrete technical solution.]]
 
-### 1.1 Functional Requirements Coverage
+### 1.1 機能要件カバレッジ
 
-- [ ] Architecture supports all functional requirements in the PRD
-- [ ] Technical approaches for all epics and stories are addressed
-- [ ] Edge cases and performance scenarios are considered
-- [ ] All required integrations are accounted for
-- [ ] User journeys are supported by the technical architecture
+- [ ] アーキテクチャがPRDの全機能要件をサポート
+- [ ] 全エピックとストーリーの技術アプローチが対処済み
+- [ ] エッジケースとパフォーマンスシナリオが考慮済み
+- [ ] 必要な全連携が考慮済み
+- [ ] ユーザージャーニーが技術アーキテクチャでサポート済み
 
-### 1.2 Non-Functional Requirements Alignment
+### 1.2 非機能要件整合性
 
-- [ ] Performance requirements are addressed with specific solutions
-- [ ] Scalability considerations are documented with approach
-- [ ] Security requirements have corresponding technical controls
-- [ ] Reliability and resilience approaches are defined
-- [ ] Compliance requirements have technical implementations
+- [ ] パフォーマンス要件が具体的ソリューションで対処済み
+- [ ] スケーラビリティの考慮事項がアプローチと共に文書化済み
+- [ ] セキュリティ要件に対応する技術的制御が存在
+- [ ] 信頼性とレジリエンスのアプローチが定義済み
+- [ ] コンプライアンス要件に技術実装が存在
 
-### 1.3 Technical Constraints Adherence
+### 1.3 技術制約の遵守
 
-- [ ] All technical constraints from PRD are satisfied
-- [ ] Platform/language requirements are followed
-- [ ] Infrastructure constraints are accommodated
-- [ ] Third-party service constraints are addressed
-- [ ] Organizational technical standards are followed
+- [ ] PRDの全技術制約が満たされている
+- [ ] プラットフォーム/言語要件が遵守済み
+- [ ] インフラ制約が考慮済み
+- [ ] サードパーティサービスの制約が対処済み
+- [ ] 組織の技術標準が遵守済み
 
-## 2. ARCHITECTURE FUNDAMENTALS
+## 2. アーキテクチャ基礎
 
 [[LLM: Architecture clarity is crucial for successful implementation. As you review this section, visualize the system as if you were explaining it to a new developer. Are there any ambiguities that could lead to misinterpretation? Would an AI agent be able to implement this architecture without confusion? Look for specific diagrams, component definitions, and clear interaction patterns.]]
 
-### 2.1 Architecture Clarity
+### 2.1 アーキテクチャの明確性
 
-- [ ] Architecture is documented with clear diagrams
-- [ ] Major components and their responsibilities are defined
-- [ ] Component interactions and dependencies are mapped
-- [ ] Data flows are clearly illustrated
-- [ ] Technology choices for each component are specified
+- [ ] アーキテクチャが明確な図で文書化済み
+- [ ] 主要コンポーネントとその責任が定義済み
+- [ ] コンポーネントの相互作用と依存関係がマッピング済み
+- [ ] データフローが明確に図示済み
+- [ ] 各コンポーネントの技術選択が指定済み
 
-### 2.2 Separation of Concerns
+### 2.2 関心事の分離
 
-- [ ] Clear boundaries between UI, business logic, and data layers
-- [ ] Responsibilities are cleanly divided between components
-- [ ] Interfaces between components are well-defined
-- [ ] Components adhere to single responsibility principle
-- [ ] Cross-cutting concerns (logging, auth, etc.) are properly addressed
+- [ ] UI、ビジネスロジック、データ層間の明確な境界
+- [ ] コンポーネント間で責任が明確に分割済み
+- [ ] コンポーネント間のインターフェースが適切に定義済み
+- [ ] コンポーネントが単一責任の原則に遵守
+- [ ] 横断的関心事（ログ、認証等）が適切に対処済み
 
 ### 2.3 Design Patterns & Best Practices
 
@@ -108,7 +108,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Code organization promotes discoverability
 - [ ] Architecture specifically designed for AI agent implementation
 
-## 3. TECHNICAL STACK & DECISIONS
+## 3. 技術スタックと決定事項
 
 [[LLM: Technology choices have long-term implications. For each technology decision, consider: Is this the simplest solution that could work? Are we over-engineering? Will this scale? What are the maintenance implications? Are there security vulnerabilities in the chosen versions? Verify that specific versions are defined, not ranges.]]
 
@@ -146,7 +146,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Data migration/seeding approach is specified
 - [ ] Data backup and recovery strategies are outlined
 
-## 4. FRONTEND DESIGN & IMPLEMENTATION [[FRONTEND ONLY]]
+## 4. フロントエンド設計と実装 [[フロントエンドのみ]]
 
 [[LLM: This entire section should be skipped for backend-only projects. Only evaluate if the project includes a user interface. When evaluating, ensure alignment between the main architecture document and the frontend-specific architecture document.]]
 
@@ -198,7 +198,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Re-render optimization techniques specified
 - [ ] Performance monitoring approach defined
 
-## 5. RESILIENCE & OPERATIONAL READINESS
+## 5. レジリエンスと運用準備
 
 [[LLM: Production systems fail in unexpected ways. As you review this section, think about Murphy's Law - what could go wrong? Consider real-world scenarios: What happens during peak load? How does the system behave when a critical service is down? Can the operations team diagnose issues at 3 AM? Look for specific resilience patterns, not just mentions of "error handling".]]
 
@@ -234,7 +234,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Infrastructure as Code approach is defined
 - [ ] Rollback and recovery procedures are outlined
 
-## 6. SECURITY & COMPLIANCE
+## 6. セキュリティとコンプライアンス
 
 [[LLM: Security is not optional. Review this section with a hacker's mindset - how could someone exploit this system? Also consider compliance: Are there industry-specific regulations that apply? GDPR? HIPAA? PCI? Ensure the architecture addresses these proactively. Look for specific security controls, not just general statements.]]
 
@@ -270,7 +270,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Least privilege principle is applied
 - [ ] Security monitoring strategy is outlined
 
-## 7. IMPLEMENTATION GUIDANCE
+## 7. 実装ガイダンス
 
 [[LLM: Clear implementation guidance prevents costly mistakes. As you review this section, imagine you're a developer starting on day one. Do they have everything they need to be productive? Are coding standards clear enough to maintain consistency across the team? Look for specific examples and patterns.]]
 
@@ -316,7 +316,7 @@ Ask the user if they want to work through the checklist:
 - [ ] System diagrams and visualizations are included
 - [ ] Decision records for key choices are included
 
-## 8. DEPENDENCY & INTEGRATION MANAGEMENT
+## 8. 依存関係と結合管理
 
 [[LLM: Dependencies are often the source of production issues. For each dependency, consider: What happens if it's unavailable? Is there a newer version with security patches? Are we locked into a vendor? What's our contingency plan? Verify specific versions and fallback strategies.]]
 
@@ -344,7 +344,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Error handling for integration failures is specified
 - [ ] Rate limits and quotas are considered
 
-## 9. AI AGENT IMPLEMENTATION SUITABILITY
+## 9. AIエージェント実装適合性
 
 [[LLM: This architecture may be implemented by AI agents. Review with extreme clarity in mind. Are patterns consistent? Is complexity minimized? Would an AI agent make incorrect assumptions? Remember: explicit is better than implicit. Look for clear file structures, naming conventions, and implementation patterns.]]
 
@@ -380,7 +380,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Testing patterns are clearly defined
 - [ ] Debugging guidance is provided
 
-## 10. ACCESSIBILITY IMPLEMENTATION [[FRONTEND ONLY]]
+## 10. アクセシビリティ実装 [[フロントエンドのみ]]
 
 [[LLM: Skip this section for backend-only projects. Accessibility is a core requirement for any user interface.]]
 

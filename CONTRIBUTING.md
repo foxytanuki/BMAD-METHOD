@@ -1,29 +1,29 @@
-# Contributing to this project
+# このプロジェクトへのコントリビューション
 
-Thank you for considering contributing to this project! This document outlines the process for contributing and some guidelines to follow.
+このプロジェクトへのコントリビューションをご検討いただき、ありがとうございます！このドキュメントでは、コントリビューションのプロセスと従うべきガイドラインについて説明します。
 
-🆕 **New to GitHub or pull requests?** Check out our [beginner-friendly Pull Request Guide](docs/how-to-contribute-with-pull-requests.md) first!
+🆕 **GitHubやpull requestが初めてですか？** まず、初心者向けの[Pull Request Guide](docs/how-to-contribute-with-pull-requests.md)をご確認ください！
 
-📋 **Before contributing**, please read our [Guiding Principles](docs/GUIDING-PRINCIPLES.md) to understand the BMad Method's core philosophy and architectural decisions.
+📋 **コントリビューションする前に**、BMad Methodのコア理念とアーキテクチャの決定を理解するため、[Guiding Principles](docs/GUIDING-PRINCIPLES.md)をお読みください。
 
-Also note, we use the discussions feature in GitHub to have a community to discuss potential ideas, uses, additions and enhancements.
+また、GitHubのdiscussions機能を使用して、潜在的なアイデア、用途、追加機能、改良について話し合うコミュニティがあることにもご注意ください。
 
-💬 **Discord Community**: Join our [Discord server](https://discord.gg/gk8jAdXWmj) for real-time discussions:
+💬 **Discord Community**: リアルタイムでの議論には、[Discord server](https://discord.gg/gk8jAdXWmj)にご参加ください：
 
-- **#general-dev** - Technical discussions, feature ideas, and development questions
-- **#bugs-issues** - Bug reports and issue discussions
+- **#general-dev** - 技術的な議論、機能のアイデア、開発に関する質問
+- **#bugs-issues** - バグレポートと課題の議論
 
-## Code of Conduct
+## 行動規範
 
-By participating in this project, you agree to abide by our Code of Conduct. Please read it before participating.
+このプロジェクトに参加することで、私たちのCode of Conductを遵守することに同意したものとします。参加する前に必ずお読みください。
 
-## Before Submitting a PR
+## PRを提出する前に
 
-**IMPORTANT**: All PRs must pass validation checks before they can be merged.
+**重要**: すべてのPRは、マージされる前にバリデーションチェックに合格する必要があります。
 
-### Required Checks
+### 必須チェック
 
-Before submitting your PR, run these commands locally:
+PRを提出する前に、ローカルで以下のコマンドを実行してください：
 
 ```bash
 # Run all validation checks
@@ -35,9 +35,9 @@ npm run format:check # Check code formatting
 npm run lint        # Check for linting issues
 ```
 
-### Fixing Issues
+### 問題の修正
 
-If any checks fail, use these commands to fix them:
+チェックが失敗した場合は、以下のコマンドを使用して修正してください：
 
 ```bash
 # Fix all issues automatically
@@ -48,9 +48,9 @@ npm run format      # Fix formatting issues
 npm run lint:fix    # Fix linting issues
 ```
 
-### Setup Git Hooks (Optional but Recommended)
+### Git Hooksの設定（任意ですが推奨）
 
-To catch issues before committing:
+コミット前に問題をキャッチするには：
 
 ```bash
 # Run this once after cloning
@@ -58,124 +58,124 @@ chmod +x tools/setup-hooks.sh
 ./tools/setup-hooks.sh
 ```
 
-## How to Contribute
+## コントリビューションの方法
 
-### Reporting Bugs
+### バグの報告
 
-1. **Check existing issues** first to avoid duplicates
-2. **Use the bug report template** when creating a new issue - it will guide you through providing:
-   - Clear bug description
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Model/IDE/BMad version details
-   - Screenshots or links if applicable
-3. **Consider discussing in Discord** (#bugs-issues channel) for quick help
-4. **Indicate if you're working on a fix** to avoid duplicate efforts
+1. **既存のissuesをまず確認し**、重複を避けてください
+2. **新しいissueを作成する際はバグレポートテンプレートを使用してください** - 以下の提供をガイドします：
+   - 明確なバグの説明
+   - 再現手順
+   - 期待される動作と実際の動作
+   - Model/IDE/BMadバージョンの詳細
+   - 該当する場合はスクリーンショットやリンク
+3. **迅速なサポートについてはDiscordでの議論を検討してください**（#bugs-issuesチャンネル）
+4. **修正に取り組んでいる場合は明示してください** - 重複した努力を避けるため
 
-### Suggesting Features
+### 機能の提案
 
-1. **Discuss first in Discord** (#general-dev channel) - the feature request template asks if you've done this
-2. **Check existing issues and discussions** to avoid duplicates
-3. **Use the feature request template** when creating an issue - it will guide you through:
-   - Confirming Discord discussion
-   - Describing the problem it solves
-   - Explaining your solution
-   - Listing alternatives considered
-4. **Be specific** about why this feature would benefit the BMad community
+1. **最初にDiscordで議論してください**（#general-devチャンネル） - 機能リクエストテンプレートでこれを行ったかどうか尋ねられます
+2. **既存のissuesやdiscussionsを確認し**、重複を避けてください
+3. **issueを作成する際は機能リクエストテンプレートを使用してください** - 以下をガイドします：
+   - Discordでの議論の確認
+   - 解決する問題の説明
+   - あなたのソリューションの説明
+   - 検討した代替案のリスト
+4. **この機能がBMadコミュニティにどのような利益をもたらすかを具体的に述べてください**
 
-### Pull Request Process
+### Pull Requestプロセス
 
-⚠️ **Before starting work:**
+⚠️ **作業を開始する前に：**
 
-1. **For bugs**: Check if an issue exists (create one using the bug template if not)
-2. **For features**: Ensure you've discussed in Discord (#general-dev) AND created a feature request issue
-3. **For large changes**: Always open an issue first to discuss alignment
+1. **バグの場合**: issueが存在するか確認してください（存在しない場合はバグテンプレートを使用して作成）
+2. **機能の場合**: Discord（#general-dev）で議論し、かつ機能リクエストissueを作成したことを確認してください
+3. **大きな変更の場合**: アライメントを議論するため、常に最初にissueを開いてください
 
-Please only propose small granular commits! If its large or significant, please discuss in the discussions tab and open up an issue first. I do not want you to waste your time on a potentially very large PR to have it rejected because it is not aligned or deviates from other planned changes. Communicate and lets work together to build and improve this great community project!
+小さな細分化されたコミットのみを提案してください！大きなまたは重要な場合は、discussionsタブで議論し、最初にissueを開いてください。整合性がない、または他の計画された変更から逸脱しているために、潜在的に非常に大きなPRが拒否されることで時間を無駄にしてほしくありません。コミュニケーションを取り、この素晴らしいコミュニティプロジェクトを構築・改善するために協力しましょう！
 
-**Important**: All contributions must align with our [Guiding Principles](docs/GUIDING-PRINCIPLES.md). Key points:
+**重要**: すべてのコントリビューションは私たちの[Guiding Principles](docs/GUIDING-PRINCIPLES.md)と整合している必要があります。主要なポイント：
 
-- Keep dev agents lean - they need context for coding, not documentation
-- Web/planning agents can be larger with more complex tasks
-- Everything is natural language (markdown) - no code in core framework
-- Use expansion packs for domain-specific features
+- dev agentsは軽量に保つ - コーディングのためのコンテキストが必要で、ドキュメントではない
+- Web/planning agentsはより複雑なタスクを持ち、大きくても構わない
+- すべては自然言語（markdown） - コアフレームワークにコードはない
+- ドメイン固有の機能にはexpansion packsを使用
 
-#### Which Branch for Your PR?
+#### PRをどのブランチに提出するか？
 
-**Submit to `next` branch** (most contributions):
+**`next`ブランチに提出**（ほとんどのコントリビューション）：
 
-- ✨ New features or agents
-- 🎨 Enhancements to existing features
-- 📚 Documentation updates
-- ♻️ Code refactoring
-- ⚡ Performance improvements
-- 🧪 New tests
-- 🎁 New expansion packs
+- ✨ 新機能やagents
+- 🎨 既存機能の改良
+- 📚 ドキュメントの更新
+- ♻️ コードのリファクタリング
+- ⚡ パフォーマンスの改善
+- 🧪 新しいテスト
+- 🎁 新しいexpansion packs
 
-**Submit to `main` branch** (critical only):
+**`main`ブランチに提出**（クリティカルなもののみ）：
 
-- 🚨 Critical bug fixes that break basic functionality
-- 🔒 Security patches
-- 📚 Fixing dangerously incorrect documentation
-- 🐛 Bugs preventing installation or basic usage
+- 🚨 基本機能を破壊する重要なバグ修正
+- 🔒 セキュリティパッチ
+- 📚 危険なほど間違ったドキュメントの修正
+- 🐛 インストールや基本的な使用を妨げるバグ
 
-**When in doubt, submit to `next`**. We'd rather test changes thoroughly before they hit stable.
+**迷った場合は`next`に提出してください**。安定版に到達する前に、変更を徹底的にテストしたいと思います。
 
-#### PR Size Guidelines
+#### PRサイズのガイドライン
 
-- **Ideal PR size**: 200-400 lines of code changes
-- **Maximum PR size**: 800 lines (excluding generated files)
-- **One feature/fix per PR**: Each PR should address a single issue or add one feature
-- **If your change is larger**: Break it into multiple smaller PRs that can be reviewed independently
-- **Related changes**: Even related changes should be separate PRs if they deliver independent value
+- **理想的なPRサイズ**: 200-400行のコード変更
+- **最大PRサイズ**: 800行（生成されたファイルを除く）
+- **PR当たり1つの機能/修正**: 各PRは単一のissueに対処するか、1つの機能を追加する必要があります
+- **変更がより大きい場合**: 独立してレビューできる複数の小さなPRに分割してください
+- **関連する変更**: 関連する変更であっても、独立した価値を提供する場合は別々のPRにする必要があります
 
-#### Breaking Down Large PRs
+#### 大きなPRの分割
 
-If your change exceeds 800 lines, use this checklist to split it:
+変更が800行を超える場合、このチェックリストを使用して分割してください：
 
-- [ ] Can I separate the refactoring from the feature implementation?
-- [ ] Can I introduce the new API/interface in one PR and implementation in another?
-- [ ] Can I split by file or module?
-- [ ] Can I create a base PR with shared utilities first?
-- [ ] Can I separate test additions from implementation?
-- [ ] Even if changes are related, can they deliver value independently?
-- [ ] Can these changes be merged in any order without breaking things?
+- [ ] リファクタリングと機能実装を分離できますか？
+- [ ] 新しいAPI/インターフェースを1つのPRで導入し、実装を別のPRで行えますか？
+- [ ] ファイルまたはモジュールごとに分割できますか？
+- [ ] 共有ユーティリティを含むベースPRを最初に作成できますか？
+- [ ] テストの追加を実装から分離できますか？
+- [ ] 変更が関連していても、独立して価値を提供できますか？
+- [ ] これらの変更は順序に関係なくマージできますか？
 
-Example breakdown:
+分割の例：
 
-1. PR #1: Add utility functions and types (100 lines)
-2. PR #2: Refactor existing code to use utilities (200 lines)
-3. PR #3: Implement new feature using refactored code (300 lines)
-4. PR #4: Add comprehensive tests (200 lines)
+1. PR #1: ユーティリティ関数と型の追加（100行）
+2. PR #2: ユーティリティを使用するために既存のコードをリファクタリング（200行）
+3. PR #3: リファクタリングされたコードを使用した新機能の実装（300行）
+4. PR #4: 包括的なテストの追加（200行）
 
-**Note**: PRs #1 and #4 could be submitted simultaneously since they deliver independent value and don't depend on each other's merge order.
+**注意**: PR #1と#4は、独立した価値を提供し、お互いのマージ順序に依存しないため、同時に提出できます。
 
-#### Pull Request Steps
+#### Pull Requestの手順
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature-name`)
-3. Make your changes
-4. Run any tests or linting to ensure quality
-5. Commit your changes with clear, descriptive messages following our commit message convention
-6. Push to your branch (`git push origin feature/your-feature-name`)
-7. Open a Pull Request against the main branch
+1. リポジトリをforkする
+2. 新しいブランチを作成する（`git checkout -b feature/your-feature-name`）
+3. 変更を行う
+4. 品質を保証するためにテストやlintingを実行する
+5. 私たちのコミットメッセージ規則に従って、明確で説明的なメッセージで変更をコミットする
+6. ブランチにpushする（`git push origin feature/your-feature-name`）
+7. mainブランチに対してPull Requestを開く
 
-## Issue Templates
+## Issueテンプレート
 
-We use GitHub issue templates to ensure all necessary information is provided:
+必要なすべての情報が提供されることを保証するためにGitHub issueテンプレートを使用しています：
 
-- **Bug Reports**: Automatically guides you through providing reproduction steps, environment details, and expected behavior
-- **Feature Requests**: Requires Discord discussion confirmation and asks for problem/solution descriptions
+- **Bug Reports**: 再現手順、環境の詳細、期待される動作の提供を自動的にガイドします
+- **Feature Requests**: Discordでの議論の確認を求め、問題/ソリューションの説明を求めます
 
-Using these templates helps maintainers understand and address your contribution faster.
+これらのテンプレートを使用することで、メンテナーがあなたのコントリビューションをより速く理解し、対処することができます。
 
-## Pull Request Description Guidelines
+## Pull Request説明のガイドライン
 
-Keep PR descriptions short and to the point following this template:
+このテンプレートに従って、PR説明を短く要点を絞って記述してください：
 
-### PR Description Template
+### PR説明テンプレート
 
-Keep your PR description concise and focused. Use this template:
+PR説明は簡潔で焦点を絞ったものにしてください。このテンプレートを使用してください：
 
 ```markdown
 ## What
@@ -200,51 +200,51 @@ Fixes #[issue number] (if applicable)
 [1-2 sentences on how you tested this]
 ```
 
-**Maximum PR description length: 200 words** (excluding code examples if needed)
+**PR説明の最大長: 200語**（必要に応じてコード例は除く）
 
-### Good vs Bad PR Descriptions
+### 良いPR説明 vs 悪いPR説明
 
-❌ **Bad Example:**
+❌ **悪い例:**
 
-> This revolutionary PR introduces a paradigm-shifting enhancement to the system's architecture by implementing a state-of-the-art solution that leverages cutting-edge methodologies to optimize performance metrics and deliver unprecedented value to stakeholders through innovative approaches...
+> この革命的なPRは、最先端のソリューションを実装することにより、システムのアーキテクチャにパラダイムシフト的な改良を導入し、パフォーマンス指標を最適化し、革新的なアプローチを通じてステークホルダーに前例のない価値を提供する最先端の方法論を活用します...
 
-✅ **Good Example:**
+✅ **良い例:**
 
-> **What:** Added validation for agent dependency resolution
-> **Why:** Build was failing silently when agents had circular dependencies
+> **What:** agentの依存関係解決のバリデーションを追加
+> **Why:** agentsに循環依存がある場合にビルドが静かに失敗していた
 > **How:**
 >
-> - Added cycle detection in dependency-resolver.js
-> - Throws clear error with dependency chain
->   **Testing:** Tested with circular deps between 3 agents
+> - dependency-resolver.jsに循環検出を追加
+> - 依存関係チェーンを含む明確なエラーを投げる
+>   **Testing:** 3つのagents間の循環依存でテスト
 
-## Commit Message Convention
+## コミットメッセージ規則
 
-Use conventional commits format:
+conventional commitsフォーマットを使用してください：
 
-- `feat:` New feature
-- `fix:` Bug fix
-- `docs:` Documentation only
-- `refactor:` Code change that neither fixes a bug nor adds a feature
-- `test:` Adding missing tests
-- `chore:` Changes to build process or auxiliary tools
+- `feat:` 新機能
+- `fix:` バグ修正
+- `docs:` ドキュメントのみ
+- `refactor:` バグを修正せず、機能を追加しないコード変更
+- `test:` 不足していたテストの追加
+- `chore:` ビルドプロセスや補助ツールの変更
 
-Keep commit messages under 72 characters.
+コミットメッセージは72文字未満にしてください。
 
-### Atomic Commits
+### アトミックコミット
 
-Each commit should represent one logical change:
+各コミットは1つの論理的な変更を表す必要があります：
 
-- **Do:** One bug fix per commit
-- **Do:** One feature addition per commit
-- **Don't:** Mix refactoring with bug fixes
-- **Don't:** Combine unrelated changes
+- **やるべき:** コミット当たり1つのバグ修正
+- **やるべき:** コミット当たり1つの機能追加
+- **やってはいけない:** リファクタリングとバグ修正を混在させる
+- **やってはいけない:** 無関係な変更を組み合わせる
 
-## Code Style
+## コードスタイル
 
-- Follow the existing code style and conventions
-- Write clear comments for complex logic
+- 既存のコードスタイルと規則に従ってください
+- 複雑なロジックには明確なコメントを記述してください
 
-## License
+## ライセンス
 
-By contributing to this project, you agree that your contributions will be licensed under the MIT License.
+このプロジェクトにコントリビューションすることで、あなたのコントリビューションがMIT Licenseの下でライセンスされることに同意したものとします。

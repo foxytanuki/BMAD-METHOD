@@ -1,146 +1,146 @@
-# BMad Creative Writing Expansion Pack
+# BMad Creative Writing 拡張パック
 
-Transform your AI into a complete creative writing studio with specialized agents for fiction, screenwriting, and narrative design.
+AIを小説、脚本、物語デザインに特化したエージェントを備えた完全なクリエイティブライティングスタジオに変身させます。
 
-## 📚 Overview
+## 📚 概要
 
-The Creative Writing Expansion Pack extends BMad-Method with a comprehensive suite of writing-focused agents, workflows, and tools. Whether you're crafting novels, screenplays, short stories, or interactive narratives, this pack provides structured AI assistance throughout your creative process.
+Creative Writing 拡張パックは、BMad-Methodにライティングに特化したエージェント、ワークフロー、ツールの包括的なスイートを追加します。小説、脚本、短編小説、インタラクティブな物語のいずれを制作する場合でも、このパックはクリエイティブプロセス全体を通じて構造化されたAIアシスタンスを提供します。
 
-### Key Features
+### 主要機能
 
-- 🤖 **10 Specialized Writing Agents** - From plot architecture to dialogue refinement
-- 📖 **8 Complete Workflows** - Novel writing, screenplay development, series planning, and more
-- ✅ **27 Quality Checklists** - Genre-specific and technical quality assurance
-- 📝 **22 Writing Tasks** - Structured activities for every phase of writing
-- 🎭 **8 Professional Templates** - Character profiles, story outlines, world guides
+- 🤖 **10種類の専門ライティングエージェント** - プロット設計から対話の洗練まで
+- 📖 **8つの完全なワークフロー** - 小説執筆、脚本開発、シリーズ企画など
+- ✅ **27のクオリティチェックリスト** - ジャンル特化型および技術的品質保証
+- 📝 **22のライティングタスク** - 執筆の各段階に対応した構造化アクティビティ
+- 🎭 **8つのプロフェッショナルテンプレート** - キャラクタープロファイル、ストーリー概要、世界設定ガイド
 
-## ✍️ Included Agents
+## ✍️ 含まれるエージェント
 
-### Core Writing Team
+### コアライティングチーム
 
-1. **Plot Architect** - Story structure, pacing, and narrative arc design
-2. **Character Psychologist** - Deep character development and psychology
-3. **World Builder** - Setting, universe, and environment creation
-4. **Editor** - Style, grammar, consistency, and flow refinement
-5. **Beta Reader** - First reader perspective and feedback simulation
+1. **Plot Architect（プロット設計者）** - ストーリー構造、ペーシング、物語アーク設計
+2. **Character Psychologist（キャラクター心理学者）** - 深いキャラクター開発と心理描写
+3. **World Builder（世界構築者）** - 設定、世界観、環境創造
+4. **Editor（エディター）** - スタイル、文法、一貫性、フロー改善
+5. **Beta Reader（ベータリーダー）** - 初回読者視点とフィードバックシミュレーション
 
-### Specialist Agents
+### 専門エージェント
 
-6. **Dialog Specialist** - Natural dialogue, voice, and conversation crafting
-7. **Narrative Designer** - Interactive storytelling and branching narratives
-8. **Genre Specialist** - Genre conventions, tropes, and market awareness
-9. **Book Critic** - Professional literary analysis and review
-10. **Cover Designer** - Book cover concepts and visual storytelling
+6. **Dialog Specialist（対話専門家）** - 自然な対話、声、会話の創作
+7. **Narrative Designer（物語デザイナー）** - インタラクティブストーリーテリングと分岐物語
+8. **Genre Specialist（ジャンル専門家）** - ジャンル慣例、トロープ、市場認識
+9. **Book Critic（書籍評論家）** - プロフェッショナルな文学分析とレビュー
+10. **Cover Designer（カバーデザイナー）** - ブックカバーコンセプトとビジュアルストーリーテリング
 
-## 🚀 Installation
+## 🚀 インストール
 
-### Via BMad Installer (After PR Acceptance)
+### BMad インストーラー経由（PR承認後）
 
 ```bash
 npx bmad-method install
-# Select "Creative Writing Studio" from the expansion packs list
+# 拡張パックリストから"Creative Writing Studio"を選択
 ```
 
-### Manual Installation
+### 手動インストール
 
-1. Clone or download this expansion pack
-2. Copy to your BMad Method installation:
+1. この拡張パックをクローンまたはダウンロード
+2. BMad Methodインストールにコピー：
    ```bash
    cp -r bmad-creative-writing/* ~/bmad-method/expansion-packs/bmad-creative-writing/
    ```
-3. Run the BMad installer to register the pack
+3. BMadインストーラーを実行してパックを登録
 
-## 💡 Usage
+## 💡 使用方法
 
-### Quick Start
+### クイックスタート
 
 ```bash
-# Load the complete creative writing team
+# 完全なクリエイティブライティングチームを読み込み
 bmad load team creative-writing
 
-# Or activate individual agents
+# または個別のエージェントをアクティベート
 bmad activate plot-architect
 bmad activate character-psychologist
 ```
 
-### Available Workflows
+### 利用可能なワークフロー
 
-- **novel-writing** - Complete novel development from premise to manuscript
-- **screenplay-development** - Three-act screenplay with industry formatting
-- **short-story-creation** - Focused narrative for magazines/anthologies
-- **series-planning** - Multi-book series architecture and continuity
+- **novel-writing** - 前提から原稿までの完全な小説開発
+- **screenplay-development** - 業界標準フォーマットの3幕構成脚本
+- **short-story-creation** - 雑誌/アンソロジー向け集中的物語
+- **series-planning** - マルチブックシリーズのアーキテクチャと連続性
 
-## 📋 Key Components
+## 📋 主要コンポーネント
 
-### Templates
+### テンプレート
 
-- `character-profile-tmpl.yaml` - Comprehensive character development
-- `story-outline-tmpl.yaml` - Three-act structure planning
-- `world-guide-tmpl.yaml` - World-building documentation
-- `scene-list-tmpl.yaml` - Scene-by-scene breakdown
-- `chapter-draft-tmpl.yaml` - Chapter structure template
-- `premise-brief-tmpl.yaml` - Story concept development
-- `beta-feedback-form.yaml` - Structured reader feedback
-- `cover-design-brief-tmpl.yaml` - Cover concept specifications
+- `character-profile-tmpl.yaml` - 包括的キャラクター開発
+- `story-outline-tmpl.yaml` - 3幕構成企画
+- `world-guide-tmpl.yaml` - 世界構築ドキュメント
+- `scene-list-tmpl.yaml` - シーン別詳細分解
+- `chapter-draft-tmpl.yaml` - 章構造テンプレート
+- `premise-brief-tmpl.yaml` - ストーリーコンセプト開発
+- `beta-feedback-form.yaml` - 構造化読者フィードバック
+- `cover-design-brief-tmpl.yaml` - カバーコンセプト仕様書
 
-### Featured Checklists
+### 注目のチェックリスト
 
-- Genre-specific: Fantasy, Sci-Fi, Romance, Mystery, Thriller, Horror
-- Technical: Plot structure, character consistency, timeline continuity
-- Publishing: KDP-ready, eBook formatting, marketing copy
-- Quality: Scene quality, dialogue authenticity, pacing/stakes
+- ジャンル別: ファンタジー、SF、ロマンス、ミステリー、スリラー、ホラー
+- 技術的: プロット構造、キャラクター一貫性、時系列の連続性
+- 出版: KDP対応、eBookフォーマット、マーケティングコピー
+- 品質: シーン品質、対話の真実性、ペーシング/ステークス
 
-## 🎯 Use Cases
+## 🎯 使用例
 
-### Novel Writing
+### 小説執筆
 
-- Premise development and market positioning
-- Three-act structure with subplot integration
-- Character arc tracking across chapters
-- Beta feedback simulation before human readers
+- 前提開発と市場ポジショニング
+- サブプロット統合、3幕構成
+- 章を通じたキャラクターアークの追跡
+- 人間の読者前のベータフィードバックシミュレーション
 
-### Screenplay Development
+### 脚本開発
 
-- Industry-standard formatting
-- Visual storytelling emphasis
-- Dialogue-driven narrative
-- Scene/location optimization
+- 業界標準フォーマット
+- ビジュアルストーリーテリングの重視
+- 対話主導の物語
+- シーン/ロケーション最適化
 
-### Series Planning
+### シリーズ企画
 
-- Multi-book continuity management
-- Character evolution across volumes
-- World expansion strategies
-- Reader retention hooks
+- マルチブック連続性管理
+- 巻を越えたキャラクターの進化
+- 世界拡張戦略
+- 読者維持フック
 
-### Publishing Preparation
+### 出版準備
 
-- KDP package assembly
-- Cover design briefs
-- Marketing copy generation
-- Genre positioning
+- KDPパッケージ組立
+- カバーデザインブリーフ
+- マーケティングコピー生成
+- ジャンルポジショニング
 
-## 🤝 Contributing
+## 🤝 貢献
 
-We welcome contributions! Please:
+貢献を歓迎します！以下をお願いします：
 
-1. Fork the repository
-2. Create a feature branch
-3. Follow BMad Method conventions
-4. Submit a PR with clear description
+1. リポジトリをフォーク
+2. 機能ブランチを作成
+3. BMad Methodの慣例に従う
+4. 明確な説明とともにPRを提出
 
-## 📄 License
+## 📄 ライセンス
 
-This expansion pack follows the same license as BMad Method core.
+この拡張パックはBMad Methodコアと同じライセンスに従います。
 
-## 🙏 Credits
+## 🙏 クレジット
 
-Created by Wes for the BMad Method community.
+BMad MethodコミュニティのWesによって作成。
 
-Special thanks to Brian (BMad) for creating the BMad Method framework.
+BMad Methodフレームワークを作成してくださったBrian (BMad)に特別な感謝を。
 
 ---
 
-**Version:** 1.0.0  
-**Compatible with:** BMad Method v1.0+  
-**Last Updated:** 2024
+**バージョン:** 1.0.0  
+**互換性:** BMad Method v1.0+  
+**最終更新:** 2024

@@ -1,156 +1,156 @@
 <!-- Powered by BMAD™ Core -->
 
-# Elicitation Methods Data
+# 引き出し手法データ
 
-## Core Reflective Methods
+## コア反省的手法
 
-**Expand or Contract for Audience**
+**対象読者に向けた拡張・収束**
 
-- Ask whether to 'expand' (add detail, elaborate) or 'contract' (simplify, clarify)
-- Identify specific target audience if relevant
-- Tailor content complexity and depth accordingly
+- 「拡張」（詳細追加、詳述）または「収束」（簡略化、明確化）を選択
+- 該当する場合は具体的なターゲット読者を特定
+- コンテンツの複雑さと深度をそれに応じて調整
 
-**Explain Reasoning (CoT Step-by-Step)**
+**推論の説明（段階的思考プロセス）**
 
-- Walk through the step-by-step thinking process
-- Reveal underlying assumptions and decision points
-- Show how conclusions were reached from current role's perspective
+- 段階的思考プロセスを通じて説明
+- 根本的な前提と決定ポイントを明らかにする
+- 現在の役割の視点から結論に至った経緯を示す
 
-**Critique and Refine**
+**批評と改善**
 
-- Review output for flaws, inconsistencies, or improvement areas
-- Identify specific weaknesses from role's expertise
-- Suggest refined version reflecting domain knowledge
+- アウトプットの欠陥、矛盾、改善領域をレビュー
+- 役割の専門知識から具体的な弱点を特定
+- ドメイン知識を反映した改良版を提案
 
-## Structural Analysis Methods
+## 構造分析手法
 
-**Analyze Logical Flow and Dependencies**
+**論理的フローと依存関係の分析**
 
-- Examine content structure for logical progression
-- Check internal consistency and coherence
-- Identify and validate dependencies between elements
-- Confirm effective ordering and sequencing
+- 論理的進行のためのコンテンツ構造を検査
+- 内部一貫性と整合性をチェック
+- 要素間の依存関係を特定し検証
+- 効果的な順序と配列を確認
 
-**Assess Alignment with Overall Goals**
+**全体目標との整合性評価**
 
-- Evaluate content contribution to stated objectives
-- Identify any misalignments or gaps
-- Interpret alignment from specific role's perspective
-- Suggest adjustments to better serve goals
+- 明示された目標へのコンテンツ貢献を評価
+- 不整合やギャップを特定
+- 特定の役割の視点から整合性を解釈
+- 目標により良く貢献するための調整を提案
 
-## Risk and Challenge Methods
+## リスクと課題の手法
 
-**Identify Potential Risks and Unforeseen Issues**
+**潜在的リスクと予期しない問題の特定**
 
-- Brainstorm potential risks from role's expertise
-- Identify overlooked edge cases or scenarios
-- Anticipate unintended consequences
-- Highlight implementation challenges
+- 役割の専門知識から潜在的リスクをブレインストーミング
+- 見落としがちなエッジケースやシナリオを特定
+- 意図しない結果を予測
+- 実装上の課題を強調
 
-**Challenge from Critical Perspective**
+**批判的視点からの挑戦**
 
-- Adopt critical stance on current content
-- Play devil's advocate from specified viewpoint
-- Argue against proposal highlighting weaknesses
-- Apply YAGNI principles when appropriate (scope trimming)
+- 現在のコンテンツに批判的スタンスを採用
+- 指定された視点から悪魔の代弁者を演じる
+- 弱点を強調して提案に反論
+- 適切な場合はYAGNI原則を適用（スコープ削減）
 
-## Creative Exploration Methods
+## 創造的探求手法
 
-**Tree of Thoughts Deep Dive**
+**思考の木構造深堀り**
 
-- Break problem into discrete "thoughts" or intermediate steps
-- Explore multiple reasoning paths simultaneously
-- Use self-evaluation to classify each path as "sure", "likely", or "impossible"
-- Apply search algorithms (BFS/DFS) to find optimal solution paths
+- 問題を個別の「思考」または中間ステップに分解
+- 複数の推論パスを同時に探求
+- 自己評価を使用して各パスを「確実」「可能性あり」「不可能」に分類
+- 検索アルゴリズム（BFS/DFS）を適用して最適解パスを発見
 
-**Hindsight is 20/20: The 'If Only...' Reflection**
+**後知恵は20/20：「もしも...」の振り返り**
 
-- Imagine retrospective scenario based on current content
-- Identify the one "if only we had known/done X..." insight
-- Describe imagined consequences humorously or dramatically
-- Extract actionable learnings for current context
+- 現在のコンテンツに基づいて回顧的シナリオを想像
+- 「もしも私たちがXを知っていた/やっていたら...」という1つの洞察を特定
+- 想像した結果をユーモラスまたは劇的に描写
+- 現在の文脈に対する実行可能な学びを抽出
 
-## Multi-Persona Collaboration Methods
+## 多重ペルソナ協働手法
 
-**Agile Team Perspective Shift**
+**アジャイルチーム視点転換**
 
-- Rotate through different Scrum team member viewpoints
-- Product Owner: Focus on user value and business impact
-- Scrum Master: Examine process flow and team dynamics
-- Developer: Assess technical implementation and complexity
-- QA: Identify testing scenarios and quality concerns
+- 異なるスクラムチームメンバーの視点を循環
+- プロダクトオーナー：ユーザー価値とビジネスインパクトに焦点
+- スクラムマスター：プロセスフローとチーム動態を検証
+- 開発者：技術実装と複雑さを評価
+- QA：テストシナリオと品質懸念を特定
 
-**Stakeholder Round Table**
+**ステークホルダー円卓会議**
 
-- Convene virtual meeting with multiple personas
-- Each persona contributes unique perspective on content
-- Identify conflicts and synergies between viewpoints
-- Synthesize insights into actionable recommendations
+- 複数のペルソナと仮想会議を開催
+- 各ペルソナがコンテンツに独自の視点を貢献
+- 視点間の対立と相乗効果を特定
+- 洞察を実行可能な推奨事項に統合
 
-**Meta-Prompting Analysis**
+**メタプロンプティング分析**
 
-- Step back to analyze the structure and logic of current approach
-- Question the format and methodology being used
-- Suggest alternative frameworks or mental models
-- Optimize the elicitation process itself
+- 現在のアプローチの構造と論理を分析するために一歩下がる
+- 使用されているフォーマットと方法論を疑問視
+- 代替的なフレームワークやメンタルモデルを提案
+- 引き出しプロセス自体を最適化
 
-## Advanced 2025 Techniques
+## 先進的2025年技術
 
-**Self-Consistency Validation**
+**自己一貫性検証**
 
-- Generate multiple reasoning paths for same problem
-- Compare consistency across different approaches
-- Identify most reliable and robust solution
-- Highlight areas where approaches diverge and why
+- 同じ問題に対して複数の推論パスを生成
+- 異なるアプローチ間の一貫性を比較
+- 最も信頼性が高く堅牢な解決策を特定
+- アプローチが分岐する領域とその理由を強調
 
-**ReWOO (Reasoning Without Observation)**
+**ReWOO（観測なし推論）**
 
-- Separate parametric reasoning from tool-based actions
-- Create reasoning plan without external dependencies
-- Identify what can be solved through pure reasoning
-- Optimize for efficiency and reduced token usage
+- パラメトリック推論をツールベースのアクションから分離
+- 外部依存性なしで推論プランを作成
+- 純粋な推論で解決できることを特定
+- 効率性とトークン使用量削減を最適化
 
-**Persona-Pattern Hybrid**
+**ペルソナパターン混合**
 
-- Combine specific role expertise with elicitation pattern
-- Architect + Risk Analysis: Deep technical risk assessment
-- UX Expert + User Journey: End-to-end experience critique
-- PM + Stakeholder Analysis: Multi-perspective impact review
+- 特定の役割専門知識と引き出しパターンを組み合わせ
+- アーキテクト + リスク分析：深い技術的リスク評価
+- UXエキスパート + ユーザージャーニー：エンドツーエンド体験批評
+- PM + ステークホルダー分析：多視点インパクトレビュー
 
-**Emergent Collaboration Discovery**
+**創発的協働発見**
 
-- Allow multiple perspectives to naturally emerge
-- Identify unexpected insights from persona interactions
-- Explore novel combinations of viewpoints
-- Capture serendipitous discoveries from multi-agent thinking
+- 複数の視点が自然に現れることを許可
+- ペルソナ間の相互作用から予期しない洞察を特定
+- 視点の新しい組み合わせを探求
+- マルチエージェント思考からの偶然の発見を捕捉
 
-## Game-Based Elicitation Methods
+## ゲームベース引き出し手法
 
-**Red Team vs Blue Team**
+**レッドチーム vs ブルーチーム**
 
-- Red Team: Attack the proposal, find vulnerabilities
-- Blue Team: Defend and strengthen the approach
-- Competitive analysis reveals blind spots
-- Results in more robust, battle-tested solutions
+- レッドチーム：提案を攻撃し、脆弱性を見つける
+- ブルーチーム：アプローチを防御し強化する
+- 競争的分析が盲点を明らかにする
+- より堅牢で実戦的な解決策をもたらす
 
-**Innovation Tournament**
+**イノベーション・トーナメント**
 
-- Pit multiple alternative approaches against each other
-- Score each approach across different criteria
-- Crowd-source evaluation from different personas
-- Identify winning combination of features
+- 複数の代替アプローチを対戦させる
+- 異なる基準で各アプローチを採点
+- 異なるペルソナからクラウドソース評価を行う
+- 機能の勝利組み合わせを特定
 
-**Escape Room Challenge**
+**エスケープルーム・チャレンジ**
 
-- Present content as constraints to work within
-- Find creative solutions within tight limitations
-- Identify minimum viable approach
-- Discover innovative workarounds and optimizations
+- コンテンツを作業すべき制約として提示
+- 厳しい制限内で創造的解決策を見つける
+- 最小実行可能アプローチを特定
+- 革新的な回避策と最適化を発見
 
-## Process Control
+## プロセス制御
 
-**Proceed / No Further Actions**
+**続行 / それ以上のアクションなし**
 
-- Acknowledge choice to finalize current work
-- Accept output as-is or move to next step
-- Prepare to continue without additional elicitation
+- 現在の作業を最終化する選択を認める
+- アウトプットをそのまま受け入れるか次のステップに進む
+- 追加の引き出しなしで継続する準備を行う

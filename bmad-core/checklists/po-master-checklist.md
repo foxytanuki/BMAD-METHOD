@@ -1,8 +1,8 @@
 <!-- Powered by BMAD™ Core -->
 
-# Product Owner (PO) Master Validation Checklist
+# プロダクトオーナー（PO）マスター検証チェックリスト
 
-This checklist serves as a comprehensive framework for the Product Owner to validate project plans before development execution. It adapts intelligently based on project type (greenfield vs brownfield) and includes UI/UX considerations when applicable.
+このチェックリストは、プロダクトオーナーが開発実行前にプロジェクト計画を検証するための包括的なフレームワークです。プロジェクトタイプ（グリーンフィールド vs ブラウンフィールド）に基づいてインテリジェントに適応し、該当する場合はUI/UX考慮事項も含みます。
 
 [[LLM: INITIALIZATION INSTRUCTIONS - PO MASTER CHECKLIST
 
@@ -59,7 +59,7 @@ Ask the user if they want to work through the checklist:
 - Section by section (interactive mode) - Review each section, get confirmation before proceeding
 - All at once (comprehensive mode) - Complete full analysis and present report at end]]
 
-## 1. PROJECT SETUP & INITIALIZATION
+## 1. プロジェクトセットアップと初期化
 
 [[LLM: Project setup is the foundation. For greenfield, ensure clean start. For brownfield, ensure safe integration with existing system. Verify setup matches project type.]]
 
@@ -95,7 +95,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Dependency conflicts or special requirements are noted
 - [ ] [[BROWNFIELD ONLY]] Version compatibility with existing stack verified
 
-## 2. INFRASTRUCTURE & DEPLOYMENT
+## 2. インフラとデプロイ
 
 [[LLM: Infrastructure must exist before use. For brownfield, must integrate with existing infrastructure without breaking it.]]
 
@@ -134,7 +134,7 @@ Ask the user if they want to work through the checklist:
 - [ ] [[BROWNFIELD ONLY]] Regression testing covers existing functionality
 - [ ] [[BROWNFIELD ONLY]] Integration testing validates new-to-existing connections
 
-## 3. EXTERNAL DEPENDENCIES & INTEGRATIONS
+## 3. 外部依存関係と結合
 
 [[LLM: External dependencies often block progress. For brownfield, ensure new dependencies don't conflict with existing ones.]]
 
@@ -163,7 +163,7 @@ Ask the user if they want to work through the checklist:
 - [ ] CDN or static asset hosting setup precedes their use
 - [ ] [[BROWNFIELD ONLY]] Existing infrastructure services preserved
 
-## 4. UI/UX CONSIDERATIONS [[UI/UX ONLY]]
+## 4. UI/UX考慮事項 [[UI/UXのみ]]
 
 [[LLM: Only evaluate this section if the project includes user interface components. Skip entirely for backend-only projects.]]
 
@@ -191,7 +191,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Form validation patterns are established
 - [ ] [[BROWNFIELD ONLY]] Existing user workflows preserved or migrated
 
-## 5. USER/AGENT RESPONSIBILITY
+## 5. ユーザー/エージェント責任
 
 [[LLM: Clear ownership prevents confusion. Ensure tasks are assigned appropriately based on what only humans can do.]]
 
@@ -209,7 +209,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Configuration management properly assigned
 - [ ] Testing and validation assigned to appropriate agents
 
-## 6. FEATURE SEQUENCING & DEPENDENCIES
+## 6. 機能シーケンシングと依存関係
 
 [[LLM: Dependencies create the critical path. For brownfield, ensure new features don't break existing ones.]]
 
@@ -237,7 +237,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Incremental value delivery maintained
 - [ ] [[BROWNFIELD ONLY]] Each epic maintains system integrity
 
-## 7. RISK MANAGEMENT [[BROWNFIELD ONLY]]
+## 7. リスク管理 [[ブラウンフィールドのみ]]
 
 [[LLM: This section is CRITICAL for brownfield projects. Think pessimistically about what could break.]]
 
@@ -265,7 +265,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Support documentation comprehensive
 - [ ] Migration path for user data validated
 
-## 8. MVP SCOPE ALIGNMENT
+## 8. MVPスコープ整合性
 
 [[LLM: MVP means MINIMUM viable product. For brownfield, ensure enhancements are truly necessary.]]
 
@@ -293,7 +293,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Performance considerations addressed
 - [ ] [[BROWNFIELD ONLY]] Compatibility requirements met
 
-## 9. DOCUMENTATION & HANDOFF
+## 9. 文書化と引き継ぎ
 
 [[LLM: Good documentation enables smooth development. For brownfield, documentation of integration points is critical.]]
 
@@ -320,7 +320,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Deployment knowledge transferred to operations
 - [ ] Historical context preserved
 
-## 10. POST-MVP CONSIDERATIONS
+## 10. MVP後考慮事項
 
 [[LLM: Planning for success prevents technical debt. For brownfield, ensure enhancements don't limit future growth.]]
 
@@ -340,7 +340,7 @@ Ask the user if they want to work through the checklist:
 - [ ] Performance measurement incorporated
 - [ ] [[BROWNFIELD ONLY]] Existing monitoring preserved/enhanced
 
-## VALIDATION SUMMARY
+## 検証サマリー
 
 [[LLM: FINAL PO VALIDATION REPORT GENERATION
 
@@ -406,29 +406,29 @@ After presenting the report, ask if the user wants:
 
 ### Category Statuses
 
-| Category                                | Status | Critical Issues |
+| カテゴリー                                | ステータス | 重大問題 |
 | --------------------------------------- | ------ | --------------- |
-| 1. Project Setup & Initialization       | _TBD_  |                 |
-| 2. Infrastructure & Deployment          | _TBD_  |                 |
-| 3. External Dependencies & Integrations | _TBD_  |                 |
-| 4. UI/UX Considerations                 | _TBD_  |                 |
-| 5. User/Agent Responsibility            | _TBD_  |                 |
-| 6. Feature Sequencing & Dependencies    | _TBD_  |                 |
-| 7. Risk Management (Brownfield)         | _TBD_  |                 |
-| 8. MVP Scope Alignment                  | _TBD_  |                 |
-| 9. Documentation & Handoff              | _TBD_  |                 |
-| 10. Post-MVP Considerations             | _TBD_  |                 |
+| 1. プロジェクトセットアップと初期化       | _判定中_  |                 |
+| 2. インフラとデプロイ          | _判定中_  |                 |
+| 3. 外部依存関係と結合 | _判定中_  |                 |
+| 4. UI/UX考慮事項                 | _判定中_  |                 |
+| 5. ユーザー/エージェント責任            | _判定中_  |                 |
+| 6. 機能シーケンシングと依存関係    | _判定中_  |                 |
+| 7. リスク管理（ブラウンフィールド）         | _判定中_  |                 |
+| 8. MVPスコープ整合性                  | _判定中_  |                 |
+| 9. 文書化と引き継ぎ              | _判定中_  |                 |
+| 10. MVP後考慮事項             | _判定中_  |                 |
 
-### Critical Deficiencies
+### 重大な不備
 
-(To be populated during validation)
+（検証中に入力予定）
 
-### Recommendations
+### 推奨事項
 
-(To be populated during validation)
+（検証中に入力予定）
 
-### Final Decision
+### 最終決定
 
-- **APPROVED**: The plan is comprehensive, properly sequenced, and ready for implementation.
-- **CONDITIONAL**: The plan requires specific adjustments before proceeding.
-- **REJECTED**: The plan requires significant revision to address critical deficiencies.
+- **承認**: 計画は包括的で、適切にシーケンスされ、実装の準備が整いました。
+- **条件付き**: 計画は継続前に特定の調整が必要です。
+- **拒否**: 計画は重大な不備を解決するために大幅な見直しが必要です。

@@ -1,38 +1,38 @@
 <!-- Powered by BMAD™ Core -->
 
-# Brainstorming Techniques Data
+# ブレインストーミング技法データ
 
-## Creative Expansion
+## 創造的拡張
 
-1. **What If Scenarios**: Ask one provocative question, get their response, then ask another
-2. **Analogical Thinking**: Give one example analogy, ask them to find 2-3 more
-3. **Reversal/Inversion**: Pose the reverse question, let them work through it
-4. **First Principles Thinking**: Ask "What are the fundamentals?" and guide them to break it down
+1. **「もしも」シナリオ**: 挑発的な質問を1つ投げかけ、回答を得てから次の質問をする
+2. **類推思考**: 1つの類推例を示し、2-3個の追加例を見つけてもらう
+3. **逆転/反転**: 逆の質問を提示し、それについて考えてもらう
+4. **第一原理思考**: 「基本原理は何か？」と尋ね、分解して考えるよう導く
 
-## Structured Frameworks
+## 構造化フレームワーク
 
-5. **SCAMPER Method**: Go through one letter at a time, wait for their ideas before moving to next
-6. **Six Thinking Hats**: Present one hat, ask for their thoughts, then move to next hat
-7. **Mind Mapping**: Start with central concept, ask them to suggest branches
+5. **SCAMPERメソッド**: 一文字ずつ進め、次に進む前にアイデアを待つ
+6. **6つの思考帽子**: 1つの帽子を提示し、意見を求めてから次の帽子に移る
+7. **マインドマッピング**: 中心概念から始め、分岐を提案してもらう
 
-## Collaborative Techniques
+## 協働技法
 
-8. **"Yes, And..." Building**: They give idea, you "yes and" it, they "yes and" back - alternate
-9. **Brainwriting/Round Robin**: They suggest idea, you build on it, ask them to build on yours
-10. **Random Stimulation**: Give one random prompt/word, ask them to make connections
+8. **「はい、そして...」構築**: 相手がアイデアを出し、あなたが「はい、そして」で発展させ、相手がそれをさらに発展させる交互作業
+9. **ブレインライティング/ラウンドロビン**: 相手がアイデアを提案し、あなたがそれを発展させ、あなたのアイデアを発展させてもらう
+10. **ランダム刺激**: ランダムなプロンプトや単語を1つ提示し、関連性を見つけてもらう
 
-## Deep Exploration
+## 深層探求
 
-11. **Five Whys**: Ask "why" and wait for their answer before asking next "why"
-12. **Morphological Analysis**: Ask them to list parameters first, then explore combinations together
-13. **Provocation Technique (PO)**: Give one provocative statement, ask them to extract useful ideas
+11. **5つの「なぜ」**: 「なぜ」と尋ね、回答を待ってから次の「なぜ」を問う
+12. **形態学的分析**: まずパラメータをリストアップしてもらい、その後組み合わせを一緒に探る
+13. **挑発技法（PO）**: 挑発的な発言を1つ提示し、有用なアイデアを抽出してもらう
 
-## Advanced Techniques
+## 高度技法
 
-14. **Forced Relationships**: Connect two unrelated concepts and ask them to find the bridge
-15. **Assumption Reversal**: Challenge their core assumptions and ask them to build from there
-16. **Role Playing**: Ask them to brainstorm from different stakeholder perspectives
-17. **Time Shifting**: "How would you solve this in 1995? 2030?"
-18. **Resource Constraints**: "What if you had only $10 and 1 hour?"
-19. **Metaphor Mapping**: Use extended metaphors to explore solutions
-20. **Question Storming**: Generate questions instead of answers first
+14. **強制関連**: 無関係な2つの概念を結び、その橋渡しを見つけてもらう
+15. **前提の逆転**: コア前提に挑戦し、そこから構築してもらう
+16. **ロールプレイング**: 異なるステークホルダーの視点からブレインストーミングしてもらう
+17. **時間シフト**: 「1995年だったらどう解決する？2030年は？」
+18. **リソース制約**: 「10ドルと1時間しかなかったら？」
+19. **メタファーマッピング**: 拡張メタファーを使用して解決策を探る
+20. **質問ストーミング**: 最初に答えではなく質問を生成する

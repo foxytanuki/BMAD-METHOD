@@ -1,27 +1,27 @@
 <!-- Powered by BMAD™ Core -->
 
-# Test Levels Framework
+# テストレベルフレームワーク
 
-Comprehensive guide for determining appropriate test levels (unit, integration, E2E) for different scenarios.
+異なるシナリオに対して適切なテストレベル（ユニット、結合、E2E）を決定するための総合ガイド。
 
-## Test Level Decision Matrix
+## テストレベル決定マトリックス
 
-### Unit Tests
+### ユニットテスト
 
-**When to use:**
+**使用する場合:**
 
-- Testing pure functions and business logic
-- Algorithm correctness
-- Input validation and data transformation
-- Error handling in isolated components
-- Complex calculations or state machines
+- 純粋関数とビジネスロジックのテスト
+- アルゴリズムの正確性
+- 入力検証とデータ変換
+- 分離されたコンポーネントのエラーハンドリング
+- 複雑な計算や状態マシン
 
-**Characteristics:**
+**特徴:**
 
-- Fast execution (immediate feedback)
-- No external dependencies (DB, API, file system)
-- Highly maintainable and stable
-- Easy to debug failures
+- 高速実行（即座フィードバック）
+- 外部依存なし（DB、API、ファイルシステム）
+- 高度に保守可能で安定
+- 失敗をデバッグしやすい
 
 **Example scenarios:**
 
@@ -33,22 +33,22 @@ unit_test:
   mock_requirements: 'None - pure function'
 ```
 
-### Integration Tests
+### 結合テスト
 
-**When to use:**
+**使用する場合:**
 
-- Component interaction verification
-- Database operations and transactions
-- API endpoint contracts
-- Service-to-service communication
-- Middleware and interceptor behavior
+- コンポーネント間相互作用の検証
+- データベース操作とトランザクション
+- APIエンドポイントコントラクト
+- サービス間通信
+- ミドルウェアとインターセプターの動作
 
-**Characteristics:**
+**特徴:**
 
-- Moderate execution time
-- Tests component boundaries
-- May use test databases or containers
-- Validates system integration points
+- 中程度の実行時間
+- コンポーネント境界をテスト
+- テストデータベースやコンテナを使用する可能性
+- システム結合ポイントを検証
 
 **Example scenarios:**
 
@@ -60,22 +60,22 @@ integration_test:
   test_environment: 'In-memory database'
 ```
 
-### End-to-End Tests
+### エンドツーエンドテスト
 
-**When to use:**
+**使用する場合:**
 
-- Critical user journeys
-- Cross-system workflows
-- Visual regression testing
-- Compliance and regulatory requirements
-- Final validation before release
+- 重要なユーザージャーニー
+- システム横断ワークフロー
+- 視觚的リグレッションテスト
+- コンプライアンスと規制要件
+- リリース前の最終検証
 
-**Characteristics:**
+**特徴:**
 
-- Slower execution
-- Tests complete workflows
-- Requires full environment setup
-- Most realistic but most brittle
+- 低速実行
+- 完全なワークフローをテスト
+- 完全な環境セットアップが必要
+- 最も現実的だが最も脆弱
 
 **Example scenarios:**
 
@@ -87,54 +87,54 @@ e2e_test:
   environment: 'Staging with test payment gateway'
 ```
 
-## Test Level Selection Rules
+## テストレベル選択ルール
 
-### Favor Unit Tests When:
+### ユニットテストを選ぶ場合:
 
-- Logic can be isolated
-- No side effects involved
-- Fast feedback needed
-- High cyclomatic complexity
+- ロジックを分離できる
+- 副作用が無い
+- 高速フィードバックが必要
+- サイクロマティック複雑度が高い
 
-### Favor Integration Tests When:
+### 結合テストを選ぶ場合:
 
-- Testing persistence layer
-- Validating service contracts
-- Testing middleware/interceptors
-- Component boundaries critical
+- 永続化層のテスト
+- サービスコントラクトの検証
+- ミドルウェア/インターセプターのテスト
+- コンポーネント境界が重要
 
-### Favor E2E Tests When:
+### E2Eテストを選ぶ場合:
 
-- User-facing critical paths
-- Multi-system interactions
-- Regulatory compliance scenarios
-- Visual regression important
+- ユーザー向け重要パス
+- マルチシステム連携
+- 規制コンプライアンスシナリオ
+- 視覺的リグレッションが重要
 
-## Anti-patterns to Avoid
+## 避けるべきアンチパターン
 
-- E2E testing for business logic validation
-- Unit testing framework behavior
-- Integration testing third-party libraries
-- Duplicate coverage across levels
+- ビジネスロジック検証でのE2Eテスト
+- フレームワーク動作のユニットテスト
+- サードパーティライブラリの結合テスト
+- レベル間での重複カバレッジ
 
-## Duplicate Coverage Guard
+## 重複カバレッジガード
 
-**Before adding any test, check:**
+**テストを追加する前に確認:**
 
-1. Is this already tested at a lower level?
-2. Can a unit test cover this instead of integration?
-3. Can an integration test cover this instead of E2E?
+1. これはすでに低いレベルでテストされているか？
+2. 結合テストの代わりにユニットテストでカバーできるか？
+3. E2Eテストの代わりに結合テストでカバーできるか？
 
-**Coverage overlap is only acceptable when:**
+**カバレッジ重複が受け入れられる場合:**
 
-- Testing different aspects (unit: logic, integration: interaction, e2e: user experience)
-- Critical paths requiring defense in depth
-- Regression prevention for previously broken functionality
+- 異なる側面をテスト（ユニット:ロジック、結合:相互作用、e2e:ユーザー体験）
+- 深層防御が必要な重要パス
+- 以前に壊れた機能のリグレッション防止
 
-## Test Naming Conventions
+## テスト命名規約
 
-- Unit: `test_{component}_{scenario}`
-- Integration: `test_{flow}_{interaction}`
+- ユニット: `test_{component}_{scenario}`
+- 結合: `test_{flow}_{interaction}`
 - E2E: `test_{journey}_{outcome}`
 
 ## Test ID Format

@@ -1,174 +1,174 @@
 <!-- Powered by BMAD™ Core -->
 
-# Test Priorities Matrix
+# テスト優先度マトリックス
 
-Guide for prioritizing test scenarios based on risk, criticality, and business impact.
+リスク、重要度、ビジネスインパクトに基づいてテストシナリオの優先度を付けるためのガイド。
 
-## Priority Levels
+## 優先度レベル
 
-### P0 - Critical (Must Test)
+### P0 - 致命的（必須テスト）
 
-**Criteria:**
+**基準:**
 
-- Revenue-impacting functionality
-- Security-critical paths
-- Data integrity operations
-- Regulatory compliance requirements
-- Previously broken functionality (regression prevention)
+- 収益に影響する機能
+- セキュリティ致命的パス
+- データ整合性操作
+- 規制コンプライアンス要件
+- 以前に壊れた機能（リグレッション防止）
 
-**Examples:**
+**例:**
 
-- Payment processing
-- Authentication/authorization
-- User data creation/deletion
-- Financial calculations
-- GDPR/privacy compliance
+- 決済処理
+- 認証/許可
+- ユーザーデータの作成/削除
+- 金融計算
+- GDPR/プライバシーコンプライアンス
 
-**Testing Requirements:**
+**テスト要件:**
 
-- Comprehensive coverage at all levels
-- Both happy and unhappy paths
-- Edge cases and error scenarios
-- Performance under load
+- 全レベルでの包括的カバレッジ
+- 正常パスと異常パスの両方
+- エッジケースとエラーシナリオ
+- 負荷下でのパフォーマンス
 
-### P1 - High (Should Test)
+### P1 - 高（テストすべき）
 
-**Criteria:**
+**基準:**
 
-- Core user journeys
-- Frequently used features
-- Features with complex logic
-- Integration points between systems
-- Features affecting user experience
+- コアユーザージャーニー
+- 頻繁に使用される機能
+- 複雑なロジックを持つ機能
+- システム間の連携ポイント
+- ユーザー体験に影響する機能
 
-**Examples:**
+**例:**
 
-- User registration flow
-- Search functionality
-- Data import/export
-- Notification systems
-- Dashboard displays
+- ユーザー登録フロー
+- 検索機能
+- データインポート/エクスポート
+- 通知システム
+- ダッシュボード表示
 
-**Testing Requirements:**
+**テスト要件:**
 
-- Primary happy paths required
-- Key error scenarios
-- Critical edge cases
-- Basic performance validation
+- 主要な正常パスが必要
+- 重要なエラーシナリオ
+- 致命的なエッジケース
+- 基本的なパフォーマンス検証
 
-### P2 - Medium (Nice to Test)
+### P2 - 中（テストしたい）
 
-**Criteria:**
+**基準:**
 
-- Secondary features
-- Admin functionality
-- Reporting features
-- Configuration options
-- UI polish and aesthetics
+- セカンダリ機能
+- 管理機能
+- レポート機能
+- 設定オプション
+- UIの磨きと美観
 
-**Examples:**
+**例:**
 
-- Admin settings panels
-- Report generation
-- Theme customization
-- Help documentation
-- Analytics tracking
+- 管理設定パネル
+- レポート生成
+- テーマカスタマイゼーション
+- ヘルプドキュメント
+- アナリティクストラッキング
 
-**Testing Requirements:**
+**テスト要件:**
 
-- Happy path coverage
-- Basic error handling
-- Can defer edge cases
+- 正常パスカバレッジ
+- 基本的なエラーハンドリング
+- エッジケースは延期可能
 
-### P3 - Low (Test if Time Permits)
+### P3 - 低（時間があればテスト）
 
-**Criteria:**
+**基準:**
 
-- Rarely used features
-- Nice-to-have functionality
-- Cosmetic issues
-- Non-critical optimizations
+- めったに使われない機能
+- あればいい機能
+- 外観的な問題
+- 非重要な最適化
 
-**Examples:**
+**例:**
 
-- Advanced preferences
-- Legacy feature support
-- Experimental features
-- Debug utilities
+- 高度な設定
+- レガシー機能サポート
+- 実験的機能
+- デバッグユーティリティ
 
-**Testing Requirements:**
+**テスト要件:**
 
-- Smoke tests only
-- Can rely on manual testing
-- Document known limitations
+- スモークテストのみ
+- 手動テストに依存可能
+- 既知の制限を文書化
 
-## Risk-Based Priority Adjustments
+## リスクベース優先度調整
 
-### Increase Priority When:
+### 優先度を上げる場合:
 
-- High user impact (affects >50% of users)
-- High financial impact (>$10K potential loss)
-- Security vulnerability potential
-- Compliance/legal requirements
-- Customer-reported issues
-- Complex implementation (>500 LOC)
-- Multiple system dependencies
+- 高ユーザーインパクト（ユーザーの50%以上に影響）
+- 高金融インパクト（$10K以上の潜在的損失）
+- セキュリティ脆弱性の可能性
+- コンプライアンス/法的要件
+- 顧客報告問題
+- 複雑な実装（500行以上）
+- 複数システム依存
 
-### Decrease Priority When:
+### 優先度を下げる場合:
 
-- Feature flag protected
-- Gradual rollout planned
-- Strong monitoring in place
-- Easy rollback capability
-- Low usage metrics
-- Simple implementation
-- Well-isolated component
+- 機能フラグで保護されている
+- 段階的ロールアウトが予定されている
+- 強力な監視が配置されている
+- 簡単なロールバック機能
+- 低使用メトリック
+- シンプルな実装
+- 適切に分離されたコンポーネント
 
-## Test Coverage by Priority
+## 優先度別テストカバレッジ
 
-| Priority | Unit Coverage | Integration Coverage | E2E Coverage       |
+| 優先度 | ユニットカバレッジ | 結合カバレッジ | E2Eカバレッジ       |
 | -------- | ------------- | -------------------- | ------------------ |
-| P0       | >90%          | >80%                 | All critical paths |
-| P1       | >80%          | >60%                 | Main happy paths   |
-| P2       | >60%          | >40%                 | Smoke tests        |
-| P3       | Best effort   | Best effort          | Manual only        |
+| P0       | >90%          | >80%                 | 全致命的パス |
+| P1       | >80%          | >60%                 | 主要正常パス   |
+| P2       | >60%          | >40%                 | スモークテスト        |
+| P3       | ベストエフォート   | ベストエフォート          | 手動のみ        |
 
-## Priority Assignment Rules
+## 優先度割り当てルール
 
-1. **Start with business impact** - What happens if this fails?
-2. **Consider probability** - How likely is failure?
-3. **Factor in detectability** - Would we know if it failed?
-4. **Account for recoverability** - Can we fix it quickly?
+1. **ビジネスインパクトから始める** - これが失敗したら何が起こるか？
+2. **確率を考慮** - 失敗の可能性はどの程度か？
+3. **検出可能性を考慮** - 失敗したら気づくか？
+4. **回復可能性を考慮** - すぐに修正できるか？
 
-## Priority Decision Tree
+## 優先度決定ツリー
 
 ```
-Is it revenue-critical?
+収益に重要か？
 ├─ YES → P0
-└─ NO → Does it affect core user journey?
-    ├─ YES → Is it high-risk?
+└─ NO → コアユーザージャーニーに影響するか？
+    ├─ YES → ハイリスクか？
     │   ├─ YES → P0
     │   └─ NO → P1
-    └─ NO → Is it frequently used?
+    └─ NO → 頻繁に使用されるか？
         ├─ YES → P1
-        └─ NO → Is it customer-facing?
+        └─ NO → 顧客向けか？
             ├─ YES → P2
             └─ NO → P3
 ```
 
-## Test Execution Order
+## テスト実行順序
 
-1. Execute P0 tests first (fail fast on critical issues)
-2. Execute P1 tests second (core functionality)
-3. Execute P2 tests if time permits
-4. P3 tests only in full regression cycles
+1. P0テストを最初に実行（重要な問題です早く失敗）
+2. P1テストを2番目に実行（コア機能）
+3. 時間があればP2テストを実行
+4. P3テストは完全なリグレッションサイクルのみ
 
-## Continuous Adjustment
+## 継続的調整
 
-Review and adjust priorities based on:
+以下に基づいて優先度をレビューし調整:
 
-- Production incident patterns
-- User feedback and complaints
-- Usage analytics
-- Test failure history
-- Business priority changes
+- 本番環境インシデントパターン
+- ユーザーフィードバックと苦情
+- 使用率アナリティクス
+- テスト失敗履歴
+- ビジネス優先度の変更

@@ -1,10 +1,10 @@
 <!-- Powered by BMAD™ Core -->
 
-# Story Definition of Done (DoD) Checklist
+# ストーリー完了の定義（DoD）チェックリスト
 
-## Instructions for Developer Agent
+## 開発エージェントへの指示
 
-Before marking a story as 'Review', please go through each item in this checklist. Report the status of each item (e.g., [x] Done, [ ] Not Done, [N/A] Not Applicable) and provide brief comments if necessary.
+ストーリーを「レビュー」としてマークする前に、このチェックリストの各項目を確認してください。各項目の状態を報告し（例：[x] 完了、[ ] 未完了、[N/A] 該当なし）、必要に応じて簡潔なコメントを提供してください。
 
 [[LLM: INITIALIZATION INSTRUCTIONS - STORY DOD VALIDATION
 
@@ -22,75 +22,75 @@ EXECUTION APPROACH:
 
 The goal is quality delivery, not just checking boxes.]]
 
-## Checklist Items
+## チェックリスト項目
 
-1. **Requirements Met:**
+1. **要件の満たし:**
 
-   [[LLM: Be specific - list each requirement and whether it's complete]]
-   - [ ] All functional requirements specified in the story are implemented.
-   - [ ] All acceptance criteria defined in the story are met.
+   [[LLM: 具体的に - 各要件とその完了状態をリスト化]]
+   - [ ] ストーリーで指定された全機能要件が実装済み。
+   - [ ] ストーリーで定義された全受入基準が満たされている。
 
-2. **Coding Standards & Project Structure:**
+2. **コーディング標準とプロジェクト構造:**
 
-   [[LLM: Code quality matters for maintainability. Check each item carefully]]
-   - [ ] All new/modified code strictly adheres to `Operational Guidelines`.
-   - [ ] All new/modified code aligns with `Project Structure` (file locations, naming, etc.).
-   - [ ] Adherence to `Tech Stack` for technologies/versions used (if story introduces or modifies tech usage).
-   - [ ] Adherence to `Api Reference` and `Data Models` (if story involves API or data model changes).
-   - [ ] Basic security best practices (e.g., input validation, proper error handling, no hardcoded secrets) applied for new/modified code.
-   - [ ] No new linter errors or warnings introduced.
-   - [ ] Code is well-commented where necessary (clarifying complex logic, not obvious statements).
+   [[LLM: コード品質は保守性に重要。各項目を注意深くチェック]]
+   - [ ] 全新規/修正コードが`運用ガイドライン`に厳格に遵守。
+   - [ ] 全新規/修正コードが`プロジェクト構造`と整合（ファイル位置、命名等）。
+   - [ ] 使用された技術/バージョンに対する`技術スタック`への遵守（ストーリーが技術使用を導入または変更する場合）。
+   - [ ] `APIリファレンス`と`データモデル`への遵守（ストーリーがAPIまたはデータモデル変更を含む場合）。
+   - [ ] 新規/修正コードに基本的セキュリティベストプラクティス（入力検証、適切なエラーハンドリング、シークレットのハードコード禁止等）を適用。
+   - [ ] 新しいリンターエラーや警告を導入していない。
+   - [ ] 必要な箇所でコードが適切にコメント済み（複雑なロジックを清書、明らかなコメントは不要）。
 
-3. **Testing:**
+3. **テスト:**
 
-   [[LLM: Testing proves your code works. Be honest about test coverage]]
-   - [ ] All required unit tests as per the story and `Operational Guidelines` Testing Strategy are implemented.
-   - [ ] All required integration tests (if applicable) as per the story and `Operational Guidelines` Testing Strategy are implemented.
-   - [ ] All tests (unit, integration, E2E if applicable) pass successfully.
-   - [ ] Test coverage meets project standards (if defined).
+   [[LLM: テストはコードが機能することを証明。テストカバレッジについて正直に]]
+   - [ ] ストーリーと`運用ガイドライン`のテスト戦略で要求される全ユニットテストが実装済み。
+   - [ ] ストーリーと`運用ガイドライン`のテスト戦略で要求される全結合テスト（該当する場合）が実装済み。
+   - [ ] 全テスト（ユニット、結合、E2E該当する場合）が成功裏にパス。
+   - [ ] テストカバレッジがプロジェクト標準を満たしている（定義されている場合）。
 
-4. **Functionality & Verification:**
+4. **機能と検証:**
 
-   [[LLM: Did you actually run and test your code? Be specific about what you tested]]
-   - [ ] Functionality has been manually verified by the developer (e.g., running the app locally, checking UI, testing API endpoints).
-   - [ ] Edge cases and potential error conditions considered and handled gracefully.
+   [[LLM: 実際にコードを実行しテストしたか？テストした内容を具体的に]]
+   - [ ] 機能が開発者によって手動で検証済み（アプリのローカル実行、UIチェック、APIエンドポイントテスト等）。
+   - [ ] エッジケースと潜在的エラー条件が考慮され、適切に処理済み。
 
-5. **Story Administration:**
+5. **ストーリー管理:**
 
-   [[LLM: Documentation helps the next developer. What should they know?]]
-   - [ ] All tasks within the story file are marked as complete.
-   - [ ] Any clarifications or decisions made during development are documented in the story file or linked appropriately.
-   - [ ] The story wrap up section has been completed with notes of changes or information relevant to the next story or overall project, the agent model that was primarily used during development, and the changelog of any changes is properly updated.
+   [[LLM: 文書化は次の開発者を助ける。彼らが知っておくべきことは？]]
+   - [ ] ストーリーファイル内の全タスクが完了とマーク済み。
+   - [ ] 開発中に行われた明確化や決定がストーリーファイルに文書化され、または適切にリンク済み。
+   - [ ] ストーリーまとめセクションが、次のストーリーやプロジェクト全体に関連する変更や情報、開発中に主に使用されたエージェントモデル、変更ログの適切な更新を含めて完成済み。
 
-6. **Dependencies, Build & Configuration:**
+6. **依存関係、ビルド、設定:**
 
-   [[LLM: Build issues block everyone. Ensure everything compiles and runs cleanly]]
-   - [ ] Project builds successfully without errors.
-   - [ ] Project linting passes
-   - [ ] Any new dependencies added were either pre-approved in the story requirements OR explicitly approved by the user during development (approval documented in story file).
-   - [ ] If new dependencies were added, they are recorded in the appropriate project files (e.g., `package.json`, `requirements.txt`) with justification.
-   - [ ] No known security vulnerabilities introduced by newly added and approved dependencies.
-   - [ ] If new environment variables or configurations were introduced by the story, they are documented and handled securely.
+   [[LLM: ビルド問題は全員をブロック。すべてがクリーンにコンパイルし実行されることを保証]]
+   - [ ] プロジェクトがエラーなしで成功裏にビルド。
+   - [ ] プロジェクトリントがパス。
+   - [ ] 追加された新しい依存関係は、ストーリー要件で事前承認されているか、開発中にユーザーが明示的に承認したもの（承認はストーリーファイルに文書化）。
+   - [ ] 新しい依存関係が追加された場合、適切なプロジェクトファイル（`package.json`、`requirements.txt`等）に根拠とともに記録済み。
+   - [ ] 新しく追加・承認された依存関係による既知のセキュリティ脆弱性の導入なし。
+   - [ ] ストーリーで新しい環境変数や設定が導入された場合、それらが文書化され安全に処理済み。
 
-7. **Documentation (If Applicable):**
+7. **文書化（該当する場合）:**
 
-   [[LLM: Good documentation prevents future confusion. What needs explaining?]]
-   - [ ] Relevant inline code documentation (e.g., JSDoc, TSDoc, Python docstrings) for new public APIs or complex logic is complete.
-   - [ ] User-facing documentation updated, if changes impact users.
-   - [ ] Technical documentation (e.g., READMEs, system diagrams) updated if significant architectural changes were made.
+   [[LLM: 良い文書化は将来の混乱を防ぐ。何を説明する必要があるか？]]
+   - [ ] 新しいパブリックAPIや複雑なロジックの関連インラインコード文書（JSDoc、TSDoc、Python docstrings等）が完成。
+   - [ ] 変更がユーザーに影響する場合、ユーザー向け文書が更新済み。
+   - [ ] 重大なアーキテクチャ変更が行われた場合、技術文書（README、システム図等）が更新済み。
 
-## Final Confirmation
+## 最終確認
 
-[[LLM: FINAL DOD SUMMARY
+[[LLM: 最終DoDサマリー
 
-After completing the checklist:
+チェックリスト完了後:
 
-1. Summarize what was accomplished in this story
-2. List any items marked as [ ] Not Done with explanations
-3. Identify any technical debt or follow-up work needed
-4. Note any challenges or learnings for future stories
-5. Confirm whether the story is truly ready for review
+1. このストーリーで達成されたことを要約
+2. [ ] 未完了とマークされた項目を説明付きでリスト
+3. 必要な技術的債務やフォローアップ作業を特定
+4. 将来のストーリーへの課題や学びをメモ
+5. ストーリーが真にレビュー準備完了か確認
 
-Be honest - it's better to flag issues now than have them discovered later.]]
+正直に - 問題を今フラグする方が後で発見されるより良い。]]
 
-- [ ] I, the Developer Agent, confirm that all applicable items above have been addressed.
+- [ ] 私、開発エージェントは、上記の該当する全項目が対処されたことを確認します。
